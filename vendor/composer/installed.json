@@ -16,7 +16,7 @@
         },
         "time": "2014-01-08 17:37:55",
         "type": "yii-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "dosamigos\\yii\\helpers\\": "src/"
@@ -296,7 +296,7 @@
         },
         "time": "2016-01-03 14:25:58",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "."
@@ -637,7 +637,7 @@
         },
         "time": "2014-12-01 16:44:09",
         "type": "yii-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "BSD-3-Clause"
@@ -676,7 +676,7 @@
         },
         "time": "2015-01-01 06:28:50",
         "type": "yii-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "NestedSetBehavior.php"

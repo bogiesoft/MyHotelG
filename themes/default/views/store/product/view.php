@@ -19,6 +19,10 @@ $this->breadcrumbs = array_merge(
     [CHtml::encode($product->name)]
 );
 ?>
+<div class="row">
+    <div class="grid_4"></div>
+    <div class="grid_8"></div>
+</div>
 <div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="col-sm-12">
         <div class="row">
@@ -42,7 +46,7 @@ $this->breadcrumbs = array_merge(
                                     <a href="<?= $product->getImageUrl(); ?>" class="thumbnail">
                                         <img src="<?= $product->getImageUrl(50, 50); ?>"
                                              alt="<?= CHtml::encode($product->getImageAlt()); ?>"
-                                             title="<?= CHtml::encode($product->getImageTitle()); ?>" />
+                                             title="<?= CHtml::encode($product->getImageTitle()); ?>"/>
                                     </a>
                                 </div>
                                 <?php foreach ($product->getImages() as $key => $image): { ?>
@@ -50,7 +54,7 @@ $this->breadcrumbs = array_merge(
                                         <a href="<?= $image->getImageUrl(); ?>" class="thumbnail">
                                             <img src="<?= $image->getImageUrl(50, 50); ?>"
                                                  alt="<?= CHtml::encode($image->alt) ?>"
-                                                 title="<?= CHtml::encode($image->title) ?>" />
+                                                 title="<?= CHtml::encode($image->title) ?>"/>
                                         </a>
                                     </div>
                                 <?php } endforeach; ?>
@@ -59,14 +63,14 @@ $this->breadcrumbs = array_merge(
                     </div>
                     <div class="col-sm-8">
 
-                        <?php if($product->isInStock()):?>
-                            <span class="label label-success"><?= Yii::t("StoreModule.store", "In stock");?></span>
-                            <?php if($product->quantity):?>
+                        <?php if ($product->isInStock()): ?>
+                            <span class="label label-success"><?= Yii::t("StoreModule.store", "In stock"); ?></span>
+                            <?php if ($product->quantity): ?>
                                 <span><?= $product->quantity; ?> <?= Yii::t("StoreModule.store", "in stock"); ?></span>
-                            <?php endif;?>
-                        <?php else:?>
-                            <span class="label label-danger"><?= Yii::t("StoreModule.store", "Not in stock");?></span>
-                        <?php endif;?>
+                            <?php endif; ?>
+                        <?php else: ?>
+                            <span class="label label-danger"><?= Yii::t("StoreModule.store", "Not in stock"); ?></span>
+                        <?php endif; ?>
 
                         <div class="properties">
                             <?php foreach ($product->getAttributeGroups() as $groupName => $items): { ?>
@@ -76,16 +80,16 @@ $this->breadcrumbs = array_merge(
                                     </h4>
                                     <table>
                                         <tbody>
-                                            <?php foreach ($items as $attribute): { ?>
-                                                <tr>
-                                                    <td class="key">
-                                                        <span><?= CHtml::encode($attribute->title); ?></span>
-                                                    </td>
-                                                    <td class="value">
-                                                        <?= AttributeRender::renderValue($attribute, $product->attribute($attribute)); ?>
-                                                    </td>
-                                                </tr>
-                                            <?php } endforeach; ?>
+                                        <?php foreach ($items as $attribute): { ?>
+                                            <tr>
+                                                <td class="key">
+                                                    <span><?= CHtml::encode($attribute->title); ?></span>
+                                                </td>
+                                                <td class="value">
+                                                    <?= AttributeRender::renderValue($attribute, $product->attribute($attribute)); ?>
+                                                </td>
+                                            </tr>
+                                        <?php } endforeach; ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -94,10 +98,10 @@ $this->breadcrumbs = array_merge(
                         <br/>
                         <h4><?= Yii::t("StoreModule.store", "Description"); ?></h4>
                         <?= $product->short_description; ?>
-                        <?php if($product->getVariantsGroup()):?>
+                        <?php if ($product->getVariantsGroup()): ?>
                             <hr/>
                             <h4><?= Yii::t("StoreModule.store", "Variants"); ?></h4>
-                        <?php endif;?>
+                        <?php endif; ?>
 
                         <form action="<?= Yii::app()->createUrl('cart/cart/add'); ?>" method="post">
                             <input type="hidden" name="Product[id]" value="<?= $product->id; ?>"/>
@@ -124,7 +128,8 @@ $this->breadcrumbs = array_merge(
                                 <?php } endforeach; ?>
                             </table>
                             <div>
-                                <input type="hidden" id="base-price" value="<?= round($product->getResultPrice(), 2); ?>"/>
+                                <input type="hidden" id="base-price"
+                                       value="<?= round($product->getResultPrice(), 2); ?>"/>
 
                                 <p>
                                     <?= Yii::t("StoreModule.store", "Price"); ?>
@@ -153,14 +158,16 @@ $this->breadcrumbs = array_merge(
                                     <div class="col-sm-3">
                                         <div class="input-group">
                                             <div class="input-group-btn">
-                                                <button class="btn btn-default product-quantity-decrease" type="button">-
+                                                <button class="btn btn-default product-quantity-decrease" type="button">
+                                                    -
                                                 </button>
                                             </div>
                                             <input type="text" class="text-center form-control" value="1"
                                                    name="Product[quantity]" id="product-quantity"/>
 
                                             <div class="input-group-btn">
-                                                <button class="btn btn-default product-quantity-increase" type="button">+
+                                                <button class="btn btn-default product-quantity-increase" type="button">
+                                                    +
                                                 </button>
                                             </div>
                                         </div>

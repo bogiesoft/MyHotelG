@@ -20,7 +20,6 @@
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/flags.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/yupe.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/grid.css');
-    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/card-frontend.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/contact-form.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/grid.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/jquery.fancybox.css');
@@ -32,6 +31,7 @@
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/unslider.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/unslider-dots.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/user-popup-info.css');
+    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/lightslider.css');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/blog.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/bootstrap-notify.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.li-translit.js');
@@ -65,6 +65,7 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/tmstickup.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/unslider-min.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/wow.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/lightslider.js');
     ?>
     <script type="text/javascript">
         var yupeTokenName = '<?= Yii::app()->getRequest()->csrfTokenName;?>';

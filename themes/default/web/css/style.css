@@ -1360,3 +1360,50 @@ nav {
 }
 
 /*Core variables and mixins*/
+/*========================================================
+                    Custom Style
+=========================================================*/
+
+.b-gallery-product {
+    background-color: #eaeacc;
+    padding: 5px;
+}
+
+.b-gallery-product__pic {
+    height: 250px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+.product__title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product__description {
+    padding: 10px;
+    font-size: 18px;
+    font-family: Georgia,Times,Serif;
+}
+
+.product__button-order {
+    border: none;
+    background-color: #312420;
+    color: white;
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.product__button-order:hover {
+    background-color: #55433d;
+}
+
+
+
+
+
+
+

@@ -14,22 +14,8 @@ $this->description = !empty($page->description) ? $page->description : Yii::app(
 $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getModule('yupe')->siteKeyWords
 ?>
 
-<div class="slider-wrapper" style="height: auto;">
-    <div class="my-slider">
-        <ul>
-            <li>
-                <img src="themes/default/web/images/slider2.png" alt="">
-            </li>
-            <li>
-                <img src="themes/default/web/images/slider1.png" alt="">
-            </li>
-            <li>
-                <img src="themes/default/web/images/slider2.png" alt="">
-            </li>
-        </ul>
-    </div>
-    <div class="clearfix"></div>
-</div>
+<?php $this->widget('application.modules.slide.widgets.SlideWidget', []); ?>
+
 <div class="banner1">
     <div class="row">
         <div class="grid_4">

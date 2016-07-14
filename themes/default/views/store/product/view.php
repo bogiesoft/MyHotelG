@@ -29,7 +29,13 @@ $this->breadcrumbs = array_merge(
                             <img class="b-gallery-product__pic" src="<?= StoreImage::product($product); ?>"/>
                         </div>
                     </li>
-                  
+                    <?php foreach ($product->getImages() as $key => $image): { ?>
+                        <li>
+                            <div>
+                                <img class="b-gallery-product__pic" src="<?= $image->getImageUrl(); ?>"/>
+                            </div>
+                        </li>
+                    <?php } endforeach; ?>
                 </ul>
             </div>
             <div class="clearfix"></div>

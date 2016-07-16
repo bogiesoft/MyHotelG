@@ -123,8 +123,6 @@
                                             </a></li>
                                         <li><a href="/store">Комнаты</a></li>
                                         <li><a href="/news">Новости</a></li>
-                                        <li><a href="/contacts.html">Our
-                                                Contacts</a></li>
                                     </ul>
                                     <div class="clearfix"></div>
                                 </nav>

@@ -26,13 +26,13 @@ $this->breadcrumbs = array_merge(
                 <ul>
                     <li>
                         <div>
-                            <img class="b-gallery-product__pic" src="<?= StoreImage::product($product); ?>"/>
+                            <a class="fancybox" href="<?= StoreImage::product($product); ?>">  <img class="b-gallery-product__pic" src="<?= StoreImage::product($product); ?>"/></a>
                         </div>
                     </li>
                     <?php foreach ($product->getImages() as $key => $image): { ?>
                         <li>
                             <div>
-                                <img class="b-gallery-product__pic" src="<?= $image->getImageUrl(); ?>"/>
+                                <a class="fancybox" href=""> <img class="b-gallery-product__pic" src="<?= $image->getImageUrl(); ?>"/></a>
                             </div>
                         </li>
                     <?php } endforeach; ?>
@@ -42,9 +42,7 @@ $this->breadcrumbs = array_merge(
         </div>
     </div>
     <div class="grid_4">
-        
-        <button class="product__button-order">Оставить заявку</button>
-        
+        <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
     </div>
 </div>
 

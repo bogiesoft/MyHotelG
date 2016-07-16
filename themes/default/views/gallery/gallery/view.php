@@ -10,8 +10,11 @@ $this->breadcrumbs = [
     $model->name
 ];
 ?>
+
 <div class="gallery-show">
-    <h1 class="page-header" style="font-size: 30px;font-weight: bold;text-transform: uppercase"><?= CHtml::encode($model->name); ?></h1>
+    <h3 class="page-header" ><?= CHtml::encode($model->name); ?></h3>
+  
+  
     <?php $this->widget(
         'gallery.widgets.GalleryWidget',
         ['galleryId' => $model->id, 'gallery' => $model, 'limit' => 30]

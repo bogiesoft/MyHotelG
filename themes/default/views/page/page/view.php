@@ -11,7 +11,8 @@ $this->breadcrumbs = $this->getBreadCrumbs();
 $this->description = $model->description ?: Yii::app()->getModule('yupe')->siteDescription;
 $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWords;
 ?>
-
+<div style="min-height: 760px">
 <h1><?= $model->title; ?></h1>
 
 <?= $model->body; ?>
+</div>

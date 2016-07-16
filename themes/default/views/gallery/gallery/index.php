@@ -16,9 +16,9 @@ $this->title = Yii::t('GalleryModule.gallery', 'Image galleries');
 $this->breadcrumbs = [Yii::t('GalleryModule.gallery', 'Image galleries')];
 
 ?>
-<h1 class="page-header" style="font-size: 25px;text-transform: uppercase;text-align: center">
+<h2 class="page-header">
     <?= Yii::t('GalleryModule.gallery', 'Image galleries'); ?>
-</h1>
+</h2>
 <div class="row">
     <?php
     $this->widget(

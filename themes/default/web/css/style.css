@@ -218,7 +218,7 @@ h1 a {
 h1 .first {
     display: inline-block;
     color: #473631;
-    font: 400 66px/66px "Racing Sans One", sans-serif;
+    font: 600 66px/66px "Racing Sans One", sans-serif;
     text-transform: uppercase;
     letter-spacing: -0.02em;
 }

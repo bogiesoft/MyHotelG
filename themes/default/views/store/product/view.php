@@ -19,10 +19,45 @@ $this->breadcrumbs = array_merge(
     [CHtml::encode($product->name)]
 );
 ?>
-<div class="row">
-    <div class="grid_4"></div>
-    <div class="grid_8"></div>
+<div class="row" style="margin-top: 15px;">
+    <div class="grid_8">
+        <div class="slider-wrapper" style="height: auto;">
+            <div class="my-slider b-gallery-product">
+                <ul>
+                    <li>
+                        <div>
+                            <a class="fancybox" href="<?= StoreImage::product($product); ?>">  <img class="b-gallery-product__pic" src="<?= StoreImage::product($product); ?>"/></a>
+                        </div>
+                    </li>
+                    <?php foreach ($product->getImages() as $key => $image): { ?>
+                        <li>
+                            <div>
+                                <a class="fancybox" href=""> <img class="b-gallery-product__pic" src="<?= $image->getImageUrl(); ?>"/></a>
+                            </div>
+                        </li>
+                    <?php } endforeach; ?>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="grid_4">
+        <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
+    </div>
 </div>
+
+<div class="row" style="margin-top: 10px">
+    <div class="grid_12">
+        <h1 class="product__title"><?= CHtml::encode($product->getTitle()); ?></h1>
+        <div class="product__description">
+            <?= $product->description; ?>
+        </div>
+    </div>
+</div>
+
+
+<!--
+
 <div class="row" xmlns="http://www.w3.org/1999/html">
     <div class="col-sm-12">
         <div class="row">
@@ -106,9 +141,9 @@ $this->breadcrumbs = array_merge(
                         <form action="<?= Yii::app()->createUrl('cart/cart/add'); ?>" method="post">
                             <input type="hidden" name="Product[id]" value="<?= $product->id; ?>"/>
                             <?= CHtml::hiddenField(
-                                Yii::app()->getRequest()->csrfTokenName,
-                                Yii::app()->getRequest()->csrfToken
-                            ); ?>
+    Yii::app()->getRequest()->csrfTokenName,
+    Yii::app()->getRequest()->csrfToken
+); ?>
                             <table class="table table-condensed">
                                 <?php foreach ($product->getVariantsGroup() as $title => $variantsGroup): { ?>
                                     <tr>
@@ -117,12 +152,12 @@ $this->breadcrumbs = array_merge(
                                         </td>
                                         <td>
                                             <?=
-                                            CHtml::dropDownList(
-                                                'ProductVariant[]',
-                                                null,
-                                                CHtml::listData($variantsGroup, 'id', 'optionValue'),
-                                                ['empty' => '', 'class' => 'form-control', 'options' => $product->getVariantsOptions()]
-                                            ); ?>
+    CHtml::dropDownList(
+        'ProductVariant[]',
+        null,
+        CHtml::listData($variantsGroup, 'id', 'optionValue'),
+        ['empty' => '', 'class' => 'form-control', 'options' => $product->getVariantsOptions()]
+    ); ?>
                                         </td>
                                     </tr>
                                 <?php } endforeach; ?>
@@ -245,9 +280,9 @@ $this->breadcrumbs = array_merge(
             <?php if (Yii::app()->hasModule('comment')): ?>
                 <div class="tab-pane" id="comments-tab">
                     <?php $this->widget('application.modules.comment.widgets.CommentsWidget', [
-                        'redirectTo' => ProductHelper::getUrl($product),
-                        'model' => $product,
-                    ]); ?>
+    'redirectTo' => ProductHelper::getUrl($product),
+    'model' => $product,
+]); ?>
                 </div>
             <?php endif; ?>
         </div>
@@ -257,6 +292,7 @@ $this->breadcrumbs = array_merge(
     </div>
 </div>
 
+-->
 <?php Yii::app()->getClientScript()->registerScript(
     "product-images",
     <<<JS

@@ -5,16 +5,9 @@
  * @var TbActiveForm $form
  */
 ?>
-
-<div class="row">
-    <div class="col-sm-12">
-        <button class="btn btn-info" data-toggle="modal" data-target="#callbackModal">
-            <i class="fa fa-fw fa-phone"></i>
-            <?= Yii::t('CallbackModule.callback', 'Request a call back') ?>
+        <button class="product__button-order" data-toggle="modal" data-target="#callbackModal">
+          Оставить  заявку
         </button>
-    </div>
-</div>
-
 <div id="callbackModal" class="modal fade" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -78,11 +71,8 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">
-                    <?= Yii::t('CallbackModule.callback', 'Close') ?>
-                </button>
                 <button type="submit" class="btn btn-success" id="callback-send">
-                    <?= Yii::t('CallbackModule.callback', 'Send request') ?>
+                    <?= Yii::t('CallbackModule.callback', 'Оставить заявку') ?>
                 </button>
             </div>
             <?php $this->endWidget(); ?>

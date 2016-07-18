@@ -20,7 +20,6 @@
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/flags.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/yupe.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/grid.css');
-    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/card-frontend.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/contact-form.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/grid.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/jquery.fancybox.css');
@@ -32,6 +31,7 @@
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/unslider.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/unslider-dots.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/user-popup-info.css');
+    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/lightslider.css');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/blog.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/bootstrap-notify.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.li-translit.js');
@@ -51,7 +51,6 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.ui.touch-punch.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery-ui-1.10.3.custom.min.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/masonry.min.js');
-    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/modal.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/search.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/slides.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/store.js');
@@ -65,6 +64,8 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/tmstickup.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/unslider-min.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/wow.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/lightslider.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/masonry.pkgd.min.js');
     ?>
     <script type="text/javascript">
         var yupeTokenName = '<?= Yii::app()->getRequest()->csrfTokenName;?>';
@@ -121,119 +122,8 @@
                                         <li><a href="/albums">Галерея
                                             </a></li>
                                         <li><a href="/store">Комнаты</a></li>
-                                        <li><a href="/offers.html">Special
-                                                offers</a></li>
-                                        <li><a href="news.html">latest
-                                                news &amp; events</a></li>
-                                        <li><a href="/contacts.html">Our
-                                                Contacts</a></li>
+                                        <li><a href="/news">Новости</a></li>
                                     </ul>
-                                    <select class="select-menu"
-                                            style="display: inline-block;">
-                                        <option value="#">Navigate to...</option>
-                                        <option value="/"
-                                                selected="selected">&nbsp;Главная
-                                        </option>
-                                        <option value="/#">–&nbsp;About</option>
-                                        <option value="/#">–&nbsp;News</option>
-                                        <option value="/#">––&nbsp;Pellentesque</option>
-                                        <option value="/#">––&nbsp;Aliquam</option>
-                                        <option value="/#">––&nbsp;Mauris</option>
-                                        <option value="/#">–&nbsp;Services</option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-1.html">&nbsp;База
-                                            отдыха
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-2.html">&nbsp;Our
-                                            rooms
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-3.html">&nbsp;Special
-                                            offers
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-4.html">&nbsp;latest
-                                            news &amp; events
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-5.html">&nbsp;Our
-                                            Contacts
-                                        </option>
-                                    </select>
-                                    <div class="clearfix"></div>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="stuck_container" class="isStuck"
-                 style="top: -58px; visibility: visible; position: fixed; width: 100%;">
-                <div class="container">
-                    <div class="row">
-                        <div class="grid_12">
-                            <div class="menu-wrapper">
-                                <nav>
-                                    <ul class="sf-menu sf-js-enabled sf-arrows">
-                                        <li class="current"><a
-                                                href="/"
-                                                class="sf-with-ul">Главная</a>
-                                            <ul class="sub-menu" style="display: none;">
-                                                <li><a href="/#">About</a>
-                                                </li>
-                                                <li><a href="/#"
-                                                       class="sf-with-ul">News</a>
-                                                    <ul class="sub-menu" style="display: none;">
-                                                        <li>
-                                                            <a href="/#">Pellentesque</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/#">Aliquam</a>
-                                                        </li>
-                                                        <li>
-                                                            <a href="/#">Mauris</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="/#">Services</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="http://livedemo00.template-help.com/wt_53471/index-1.html">About
-                                                our hotel</a></li>
-                                        <li><a href="http://livedemo00.template-help.com/wt_53471/index-2.html">Our
-                                                rooms</a></li>
-                                        <li><a href="http://livedemo00.template-help.com/wt_53471/index-3.html">Special
-                                                offers</a></li>
-                                        <li><a href="http://livedemo00.template-help.com/wt_53471/index-4.html">latest
-                                                news &amp; events</a></li>
-                                        <li><a href="http://livedemo00.template-help.com/wt_53471/index-5.html">Our
-                                                Contacts</a></li>
-                                    </ul>
-                                    <select class="select-menu sf-menu sf-js-enabled sf-arrows"
-                                            style="display: inline-block;">
-                                        <option value="#">Navigate to...</option>
-                                        <option value="/"
-                                                selected="selected">&nbsp;Главная
-                                        </option>
-                                        <option value="/#">–&nbsp;About</option>
-                                        <option value="/#">–&nbsp;News</option>
-                                        <option value="/#">––&nbsp;Pellentesque</option>
-                                        <option value="/#">––&nbsp;Aliquam</option>
-                                        <option value="/#">––&nbsp;Mauris</option>
-                                        <option value="/#">–&nbsp;Services</option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-1.html">&nbsp;About
-                                            our hotel
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-2.html">&nbsp;Our
-                                            rooms
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-3.html">&nbsp;Special
-                                            offers
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-4.html">&nbsp;latest
-                                            news &amp; events
-                                        </option>
-                                        <option value="http://livedemo00.template-help.com/wt_53471/index-5.html">&nbsp;Our
-                                            Contacts
-                                        </option>
-                                    </select>
                                     <div class="clearfix"></div>
                                 </nav>
                             </div>
@@ -311,5 +201,7 @@
     });
 </script>
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
+
+
 </body>
 </html>

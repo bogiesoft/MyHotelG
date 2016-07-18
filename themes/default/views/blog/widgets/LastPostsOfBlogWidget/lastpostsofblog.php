@@ -1,9 +1,55 @@
 <?php Yii::import('application.modules.blog.BlogModule'); ?>
+<div class="grid_6" style="padding: 25px">
+    <?php foreach ($posts as $post): ?>
+    <div class="b-preview-tour__image" style="background-image: url('<?= $post->getImageUrl();?>')">
+        
+   <div class="b-preview-tour__wrapper">
+        <div class="b-preview-tour__title" style="height: 100%;text-align: center">
+            <?= CHtml::link(
+                CHtml::encode($post->title),
+                ['/blog/post/view', 'slug' => $post->slug]
+            ); ?>
+        </div>
+
+   </div>
+    </div>
+    <?php endforeach; ?>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
 
 <div class="posts">
 
     <p class="posts-header">
-        <span class="posts-header-text"><?= Yii::t('BlogModule.blog', 'Last blog posts'); ?></span>
+        <span class="posts-header-text">Все туры</span>
     </p>
 
     <div class="posts-list">
@@ -18,36 +64,12 @@
 
                 <div class="posts-list-block-meta">
                     <span>
-                        <i class="glyphicon glyphicon-user"></i>
+                      
 
-                        <?php $this->widget(
-                            'application.modules.user.widgets.UserPopupInfoWidget',
-                            [
-                                'model' => $post->createUser
-                            ]
-                        ); ?>
                     </span>
 
                     <span>
-                        <i class="glyphicon glyphicon-pencil"></i>
 
-                        <?= CHtml::link(
-                            CHtml::encode($post->blog->name),
-                            [
-                                '/blog/blog/view/',
-                                'slug' => CHtml::encode($post->blog->slug)
-                            ]
-                        ); ?>
-                    </span>
-
-                    <span>
-                        <i class="glyphicon glyphicon-calendar"></i>
-
-                        <?= Yii::app()->getDateFormatter()->formatDateTime(
-                            $post->publish_time,
-                            "long",
-                            "short"
-                        ); ?>
                     </span>
                 </div>
 
@@ -89,3 +111,5 @@
         <?php endforeach; ?>
     </div>
 </div>
+
+-->

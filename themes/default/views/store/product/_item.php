@@ -15,6 +15,7 @@
         </h4>
         <p>
             <div class="b-producr-card__description">
+            <span class="b-producr-card__price">Стоимость <?= round($data->getBasePrice(), 2); ?> руб</span>
             <?= $data->short_description; ?>
         </div>
         </p>

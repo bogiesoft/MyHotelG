@@ -21,6 +21,7 @@ $this->breadcrumbs = array_merge(
 ?>
 <div class="row" style="margin-top: 15px;">
     <div class="grid_8">
+        <h1 class="product__title"><?= CHtml::encode($product->getTitle()); ?></h1>
         <div class="slider-wrapper" style="height: auto;">
             <div class="my-slider b-gallery-product">
                 <ul>
@@ -42,13 +43,15 @@ $this->breadcrumbs = array_merge(
         </div>
     </div>
     <div class="grid_4">
+        <div class="b-product__price">
+            <?= round($product->getBasePrice(), 2); ?> руб
+        </div>
         <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
     </div>
 </div>
 
 <div class="row" style="margin-top: 10px">
     <div class="grid_12">
-        <h1 class="product__title"><?= CHtml::encode($product->getTitle()); ?></h1>
         <div class="product__description">
             <?= $product->description; ?>
         </div>

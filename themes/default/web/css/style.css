@@ -1397,6 +1397,7 @@ nav {
 .product__title {
     font-size: 20px;
     font-weight: bold;
+    margin: 10px 0 10px 0;
 }
 
 .product__description {
@@ -1457,10 +1458,13 @@ nav {
 }
 
 .b-producr-card__description {
-    max-height: 18px;
-    overflow: hidden;
+    max-height: 47px;
+    overflow: hidden
 }
-
+.b-producr-card__price {
+    font-weight: bold;
+    font-size: 16px;
+}
 .b-product-card__link {
     border-radius: 5px;
     display: block;
@@ -1471,4 +1475,87 @@ nav {
 
 .b-product-card__link:hover {
     background-color: rgba(0, 0, 0, 0.32);
+}
+.b-tour__image {
+    border: 1px solid #312420;
+    margin: 0 0 10px 0;
+    height: 256px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+
+.b-tour__title {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.b-tour__title a {
+    text-decoration: underline;
+}
+
+.b-tour__description {
+    font-size: 14px;
+    font-family: Georgia,Times,serif;
+}
+
+.b-tour__link {
+    margin: 10px;
+    display: inline-block;
+    padding: 15px;
+    color: white;
+    background-color: #312420;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+
+.b-preview-tour__image {
+    border: 1px solid #312420;
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.b-preview-tour__title {
+    text-align: center;
+}
+.b-preview-tour__title a {
+    display: inline-block;
+    margin-top: 140px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid #312420;
+    color: white;
+    background-color: rgba(49,36,32,0.8);
+    text-decoration: none !important;
+}
+
+.b-preview-tour__title a:hover {
+    color: green;
+}
+
+
+.b-preview-tour__wrapper {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.09);
+    transition: .4s;
+}
+
+.b-preview-tour__wrapper:hover {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+.b-product__price {
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
 }

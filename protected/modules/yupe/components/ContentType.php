@@ -10,9 +10,7 @@
  * @version  0.0.1
  * @link     http://yupe.ru
  **/
-
 namespace yupe\components;
-
 /**
  * Class ContentType
  * @package yupe\components
@@ -63,7 +61,6 @@ class ContentType
      *
      */
     const TYPE_ARCH_GZIP = 11;
-
     /**
      * Фукция устанавливающая тип контента
      *
@@ -75,13 +72,11 @@ class ContentType
     {
         if (!is_null(self::getHeader($contentTypeId))) {
             header(self::getHeader($contentTypeId));
-
             return true;
         } else {
             return false;
         }
     }
-
     /**
      * Фукция возвращающая строку типа контента
      *
@@ -98,7 +93,6 @@ class ContentType
             return null;
         }
     }
-
     /**
      * Функция возвращающая все типы контента:
      *

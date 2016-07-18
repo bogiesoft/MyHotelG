@@ -24,11 +24,17 @@ $this->breadcrumbs = [
     $model->title
 ];
 ?>
+<style>
+    img {
+        max-height: 250px;
+        margin: 10px;
+    }
+</style>
 
 <div class="post">
     <div class="row">
         <div class="col-sm-12">
-            <h4><strong><?= CHtml::encode($model->title); ?></strong></h4>
+            <h2><strong><?= CHtml::encode($model->title); ?></strong></h2>
         </div>
     </div>
     <div class="row">
@@ -36,7 +42,10 @@ $this->breadcrumbs = [
             <?php if ($model->image): ?>
                 <?= CHtml::image($model->getImageUrl(), $model->title); ?>
             <?php endif; ?>
-            <p> <?= $model->full_text; ?></p>
+            <p>
+                <div style="font-size: 18px;font-family: Arial,Helvetica,Serif">
+                <?= $model->full_text; ?></p>
+        </div>
         </div>
     </div>
 </div>

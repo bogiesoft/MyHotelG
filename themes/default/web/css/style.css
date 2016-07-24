@@ -9,8 +9,8 @@
 =========================================================*/
 
 @font-face {
-    font-family: RussoOne;
-    src: url('../font/Russo_One.ttf');
+    font-family: gloria_script;
+    src: url('../font/Gloria_script.ttf');
 }
 
 body {
@@ -153,12 +153,11 @@ h6 {
 }
 
 #header .info {
-    padding: 1px 0 41px;
+    padding-bottom: 5px;
 }
 
 #header h1 {
     float: left;
-    overflow: hidden;
 }
 
 #header #search {
@@ -187,7 +186,12 @@ h6 {
 }
 
 @media (max-width: 767px) {
-    #header {
+
+    .glass-wrapper {
+        display: none !important;
+    }
+
+    header {
         text-align: center;
     }
 
@@ -218,9 +222,7 @@ h1 a {
 h1 .first {
     display: inline-block;
     color: #473631;
-    font: 600 66px/66px "Racing Sans One", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: -0.02em;
+    font: 600 56px/56px "gloria_script", sans-serif;
 }
 
 h1 .second {
@@ -244,17 +246,6 @@ h1 .third {
     position: relative;
     padding-left: 18px;
     margin-top: 29px;
-}
-
-h1 .third:before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: 4px;
-    top: -8px;
-    width: 1px;
-    height: 29px;
-    background: #b1aaa0;
 }
 
 @media (max-width: 767px) {
@@ -319,6 +310,13 @@ nav {
     }
 }
 
+.caret {
+    transform: rotate(270deg);
+    margin-left: 2px;
+    margin-bottom: 2px;
+    transition: .2s;
+}
+
 .sf-menu > li > a {
     display: block;
     text-transform: uppercase;
@@ -326,6 +324,11 @@ nav {
     -webkit-transition: 0.3s all ease;
     transition: 0.3s all ease;
     color: #ffffff;
+    text-decoration: none !important;
+}
+
+.sf-menu > li > a:hover .caret {
+    transform: rotate(360deg);
 }
 
 @media (max-width: 979px) {
@@ -361,32 +364,25 @@ nav {
     min-width: 123px;
     font: 400 14px/28px "Merriweather Sans", sans-serif;
     position: absolute;
-    top: 57px;
+    top: 40px;
     left: 50%;
     margin-left: -61.5px;
-    background: #e7e7e7;
+    background: #312420;
     text-align: center;
     padding: 10px 0 7px 0;
     z-index: 2;
-    border: 1px solid #f4f2ee;
-}
 
-.sf-menu ul:before {
-    position: absolute;
-    content: '';
-    display: block;
-    width: 18px;
-    height: 10px;
-    overflow: hidden;
-    background: url(../images/triangle1.png) no-repeat center top;
-    top: -10px;
-    left: 50%;
-    margin-left: -9px;
 }
 
 .sf-menu ul li {
     position: relative;
     display: block;
+    color: white;
+    cursor: pointer;
+}
+
+.sf-menu ul li:hover {
+    color: #4caf50;
 }
 
 .sf-menu ul li > .sf-with-ul:after {
@@ -399,7 +395,7 @@ nav {
     text-decoration: none;
     cursor: default;
     content: "\f0da";
-    color: #312420;
+    color: white;
     bottom: -1px;
     right: 15px;
     -webkit-transition: all 0.3s ease;
@@ -408,17 +404,13 @@ nav {
 
 .sf-menu ul li a {
     display: block;
-    color: #312420;
-    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+    text-decoration: none !important;
 }
 
 .sf-menu ul li a:hover {
-    color: #ffffff;
-    background: #4caf50;
-}
-
-.sf-menu ul li + li {
-    border-top: 1px solid #eaeaea;
+    color: #4caf50;
 }
 
 .sf-menu ul > .sfHover > a {
@@ -1422,6 +1414,7 @@ nav {
 }
 
 .b-gallery__mini-pic {
+    border-radius: 20px;
     height: 250px;
     background-size: cover;
     background-position-x: 50%;
@@ -1429,6 +1422,7 @@ nav {
 }
 
 .b-gallery__link {
+    border-radius: 20px;
     display: block;
     height: 100%;
     width: 100%;
@@ -1446,7 +1440,6 @@ nav {
     background-repeat: no-repeat;
 }
 
-
 .b-product-card__image {
     border: 3px solid green;
     border-radius: 5px;
@@ -1461,10 +1454,12 @@ nav {
     max-height: 47px;
     overflow: hidden
 }
+
 .b-producr-card__price {
     font-weight: bold;
     font-size: 16px;
 }
+
 .b-product-card__link {
     border-radius: 5px;
     display: block;
@@ -1476,6 +1471,7 @@ nav {
 .b-product-card__link:hover {
     background-color: rgba(0, 0, 0, 0.32);
 }
+
 .b-tour__image {
     border: 1px solid #312420;
     margin: 0 0 10px 0;
@@ -1493,13 +1489,14 @@ nav {
     text-align: center;
     margin-bottom: 15px;
 }
+
 .b-tour__title a {
     text-decoration: underline;
 }
 
 .b-tour__description {
     font-size: 14px;
-    font-family: Georgia,Times,serif;
+    font-family: Georgia, Times, serif;
 }
 
 .b-tour__link {
@@ -1525,6 +1522,7 @@ nav {
 .b-preview-tour__title {
     text-align: center;
 }
+
 .b-preview-tour__title a {
     display: inline-block;
     margin-top: 140px;
@@ -1533,14 +1531,13 @@ nav {
     font-size: 20px;
     border: 2px solid #312420;
     color: white;
-    background-color: rgba(49,36,32,0.8);
+    background-color: rgba(49, 36, 32, 0.8);
     text-decoration: none !important;
 }
 
 .b-preview-tour__title a:hover {
     color: green;
 }
-
 
 .b-preview-tour__wrapper {
     height: 100%;
@@ -1552,10 +1549,39 @@ nav {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.45);
 }
+
 .b-product__price {
     margin-bottom: 25px;
     margin-top: 25px;
     text-align: center;
     font-size: 25px;
     font-weight: bold;
+}
+
+.glass-wrapper {
+    height: 50px;
+    width: 500px;
+    display: block;
+    position: absolute;
+    top: 66px;
+}
+
+@keyframes CooLogoTittle {
+    from {
+        opacity: 0;
+        top: 50px;
+    }
+
+    to {
+        opacity: 1;
+        top: 0;
+    }
+
+
+}
+
+.logo-title {
+    animation-name: CooLogoTittle;
+    position: relative;
+    animation-duration: 2s;
 }

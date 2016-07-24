@@ -66,6 +66,7 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/wow.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/lightslider.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/masonry.pkgd.min.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/hoverIntent.js');
     ?>
     <script type="text/javascript">
         var yupeTokenName = '<?= Yii::app()->getRequest()->csrfTokenName;?>';
@@ -95,7 +96,7 @@
                 <div class="row">
                     <div class="grid_12">
                         <div class="info">
-                            <h1><a href="/"><span
+                            <h1 class="logo-title"><a href="/"><span
                                         class="first wow fadeInDown animated" data-wow-duration="1s"
                                         data-wow-delay="0.1s"
                                         style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInDown;">Усадьба НИКА</span><span
@@ -103,7 +104,14 @@
                                         data-wow-delay="0.1s"
                                         style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInRight;">Отдых в Горном Алтае</span></a>
                             </h1>
+                            <div style="float: right;text-align: center">
+                              <div style="font-size: 25px;font-weight: bold;margin-bottom: 5px">  8 800 5555 35 35 </div> <br>
+                                <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
+                            </div>
                             <div class="clearfix"></div>
+                 <div>
+                     <img class="glass-wrapper" src="/themes/default/web/images/grass2.png" alt="">
+                 </div>
                         </div>
                     </div>
                 </div>
@@ -119,11 +127,43 @@
                                                 href="/"
                                                 class="sf-with-ul">Главная</a>
                                         </li>
-                                        <li><a href="/albums">Галерея
-                                            </a></li>
-                                        <li><a href="/store">Комнаты</a></li>
+                                        <li><a href="#">Галерея <i class="caret"></i></a>
+                                            <ul>
+                                                <li><a href="/albums/4">Территория </a></li>
+                                                <li><a href="/albums/5"> Часовня</a></li>
+                                                <li> Баня и Сауна</li>
+                                                <li> Корпус 1</li>
+                                                <li> Корпус 2</li>
+                                                <li> Корпус 3</li>
+                                                <li> Корпус 4</li>
+                                                <li> Корпус 5</li>
+                                                <li> Корпус 6</li>
+                                                <li> Корпус 7</li>
+                                                <li> Ника зимой</li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="/store">Номера <i class="caret"></i></a>
+                                            <ul>
+                                                <li><a href="/store/korpus-1"> Корпус 1 </a></li>
+                                                <li>Корпус 2</li>
+                                                <li>Корпус 3</li>
+                                                <li>Корпус 4</li>
+                                                <li>Корпус 5</li>
+                                                <li>Корпус 6</li>
+                                                <li>Корпус 7</li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#"> О нас</a></li>
+                                        <li><a href="#">Гостям <i class="caret"></i></a>
+                                            <ul>
+                                                <li>Правила проживания</li>
+                                                <li>Схема <br> территории</li>
+                                                <li><a href="/otzyvy"> Отзывы </a></li>
+                                            </ul>
+                                        </li>
                                         <li><a href="/news">Новости</a></li>
-                                        <li><a href="/blogs">Отдых</a></li>
+                                        <li><a href="#"> Контакты</a></li>
+                                        <!--    <li><a href="/blogs">Отдых</a></li>-->
                                     </ul>
                                     <div class="clearfix"></div>
                                 </nav>
@@ -141,9 +181,9 @@
                 <div class="row">
                     <div class="grid_12">
                         <div style="min-height: 960px">
-                        <?= $content; ?>
+                            <?= $content; ?>
                         </div>
-                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,10 +237,17 @@
     });
 </script>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         $(".fancybox").fancybox();
     });
 </script>
+
+<script>
+    $(document).ready(function () {
+        $('ul.sf-menu').superfish();
+    });
+</script>
+
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
 

@@ -80,6 +80,9 @@
     <?php \yupe\components\TemplateEvent::fire(DefautThemeEvents::HEAD_END); ?>
 </head>
 <body>
+<div class="main_branch">
+    <img class="main_branch__pic" src="/themes/default/web/images/branch.png" alt="">
+</div>
 <!--========================================================
                           HEADER
 =========================================================-->
@@ -89,29 +92,24 @@
             <div class="container">
                 <div class="row">
                     <div class="grid_12">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="grid_12">
                         <div class="info">
-                            <h1 class="logo-title"><a href="/"><span
-                                        class="first wow fadeInDown animated" data-wow-duration="1s"
-                                        data-wow-delay="0.1s"
-                                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInDown;">Усадьба НИКА</span><span
-                                        class="third wow fadeInRight animated" data-wow-duration="1s"
-                                        data-wow-delay="0.1s"
-                                        style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: fadeInRight;">Отдых в Горном Алтае</span></a>
-                            </h1>
-                            <div style="float: right;text-align: center">
-                              <div style="font-size: 25px;font-weight: bold;margin-bottom: 5px">  8 800 5555 35 35 </div> <br>
-                                <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
+                            <div style="text-align: center">
+                                <div>
+                                    <h1 class="logo-title"><a href="/"><span
+                                                class="first wow fadeInDown animated" data-wow-duration="1s"
+                                                data-wow-delay="0.1s">Усадьба НИКА </span></a>
+                                    </h1>
+                                    <hr style="width: 50%;margin: 3px auto">
+                                    <div class="logo-title__description">Отдых в Горном Алтае </div>
+
+                                </div>
+
+                                <div style="clear: both"></div>
                             </div>
-                            <div class="clearfix"></div>
-                 <div>
-                     <img class="glass-wrapper" src="/themes/default/web/images/grass2.png" alt="">
-                 </div>
+
+                        </div>
+                        <div class="grass-substrate" style="background-image: url('/themes/default/web/images/grasssubstrate.png')">
+
                         </div>
                     </div>
                 </div>

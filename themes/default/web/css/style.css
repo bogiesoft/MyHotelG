@@ -153,11 +153,10 @@ h6 {
 }
 
 #header .info {
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 #header h1 {
-    float: left;
 }
 
 #header #search {
@@ -1576,12 +1575,68 @@ nav {
         opacity: 1;
         top: 0;
     }
+}
 
+@keyframes TwoCooLogoTittle {
+    from {
+        opacity: 0;
+        left: -50px;
+    }
 
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@keyframes ThreeCooLogoTittle {
+    from {
+        background-position-x: 0%;
+    }
+    to {
+        background-position-x: 100%;
+    }
 }
 
 .logo-title {
+    margin-top: 0px;
     animation-name: CooLogoTittle;
     position: relative;
     animation-duration: 2s;
+}
+
+.main_branch__pic {
+    position: absolute;
+    width: 300px;
+    animation-name: TwoCooLogoTittle;
+    animation-duration: 2s;
+}
+
+.logo-title__description {
+    color: #312420;
+    margin-top: 10px;
+    font-size: 40px;
+    font-family: gloria_script;
+    animation-name: CooLogoTittle;
+    position: relative;
+    animation-duration: 2s;
+}
+
+.grass-substrate {
+    animation-timing-function: ease-in-out;
+    animation-name: ThreeCooLogoTittle;
+    animation-duration: 3s;
+    height: 40px;
+    background-repeat: repeat-x;
+    background-position-x: 100%;
+    background-position-y: 3%;
+}
+
+.table-main-price {
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.table-main-price tr td {
+    border: 1px solid;
 }

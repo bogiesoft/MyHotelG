@@ -40,7 +40,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                 </div>
                 <h2>Досуг</h2>
                                         <span class="heading"><a
-                                                href="/#">Подробнее</a></span>
+                                                href="/blogs">Подробнее</a></span>
                 <p>Praesent vestibuum molestie lacuiirhs. Aenean non ummy hendreriauris.
                     Phasellllus porta.</p>
             </div>

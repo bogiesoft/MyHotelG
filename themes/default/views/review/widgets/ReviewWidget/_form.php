@@ -11,20 +11,17 @@
 $form = $this->beginWidget(
     'bootstrap.widgets.TbActiveForm',
     array(
-        'id'                     => 'Review-form',
-        'enableAjaxValidation'   => false,
+        'id' => 'Review-form',
+        'enableAjaxValidation' => false,
         'enableClientValidation' => true,
-        'htmlOptions'            => array('class' => 'well'),
+        'htmlOptions' => array('class' => 'well'),
     )
 ); ?>
 <div class="alert alert-info">
     <?php echo Yii::t('ReviewModule.Review', 'Fields with'); ?>
     <span class="required">*</span>
-    <?php echo Yii::t('ReviewModule.Review', 'are required.'); ?>
+    <?php echo ('are required.'); ?>
 </div>
-
-
-
 <div class="row">
     <div class="col-sm-7">
         <?php echo $form->textFieldGroup(
@@ -34,7 +31,7 @@ $form = $this->beginWidget(
                 'widgetOptions' => array(
                     'htmlOptions' => array(
                         'data-original-title' => $model->getAttributeLabel('username'),
-                        'data-content'        => $model->getAttributeDescription('username')
+                        'data-content' => $model->getAttributeDescription('username')
                     ),
                 ),
             )
@@ -51,7 +48,7 @@ $form = $this->beginWidget(
                 'widgetOptions' => array(
                     'htmlOptions' => array(
                         'data-original-title' => $model->getAttributeLabel('useremail'),
-                        'data-content'        => $model->getAttributeDescription('useremail')
+                        'data-content' => $model->getAttributeDescription('useremail')
                     ),
                 ),
             )
@@ -68,7 +65,7 @@ $form = $this->beginWidget(
                 'widgetOptions' => array(
                     'htmlOptions' => array(
                         'data-original-title' => $model->getAttributeLabel('text'),
-                        'data-content'        => $model->getAttributeDescription('text')
+                        'data-content' => $model->getAttributeDescription('text')
                     ),
                 ),
             )
@@ -76,29 +73,16 @@ $form = $this->beginWidget(
     </div>
 </div>
 <?php echo $form->radioButtonListGroup(
-			$model,
-			'moderation',
-			array(
-				'widgetOptions' => array(
-					'data' => array(
-						'0'=>'Отклонить',
-						'1'=>'Опубликовать',
-						'2'=>'На модерацию',
-					)
-				)
-			)
-); ?>
-
-<?php
-$this->widget(
-    'bootstrap.widgets.TbButton',
+    $model,
+    'moderation',
     array(
-        'buttonType' => 'submit',
-        'context'    => 'primary',
-        'label'      => $model->isNewRecord ? Yii::t('ReviewModule.Review', 'Create Review and continue') : Yii::t(
-                'ReviewModule.Review',
-                'Save Review and continue'
-            ),
+        'widgetOptions' => array(
+            'data' => array(
+                '0' => 'Отклонить',
+                '1' => 'Опубликовать',
+                '2' => 'На модерацию',
+            )
+        )
     )
 ); ?>
 
@@ -106,12 +90,25 @@ $this->widget(
 $this->widget(
     'bootstrap.widgets.TbButton',
     array(
-        'buttonType'  => 'submit',
+        'buttonType' => 'submit',
+        'context' => 'primary',
+        'label' => $model->isNewRecord ? Yii::t('ReviewModule.Review', 'Create Review and continue') : Yii::t(
+            'ReviewModule.Review',
+            'Save Review and continue'
+        ),
+    )
+); ?>
+
+<?php
+$this->widget(
+    'bootstrap.widgets.TbButton',
+    array(
+        'buttonType' => 'submit',
         'htmlOptions' => array('name' => 'submit-type', 'value' => 'index'),
-        'label'       => $model->isNewRecord ? Yii::t('ReviewModule.Review', 'Create Review and close') : Yii::t(
-                'ReviewModule.Review',
-                'Save Review and close'
-            ),
+        'label' => $model->isNewRecord ? Yii::t('ReviewModule.Review', 'Create Review and close') : Yii::t(
+            'ReviewModule.Review',
+            'Save Review and close'
+        ),
     )
 ); ?>
 

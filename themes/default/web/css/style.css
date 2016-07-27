@@ -165,6 +165,7 @@ h6 {
 }
 
 #header .menu-wrapper {
+    border-radius: 0 0 10px 10px;
     padding: 7px 50px 22px;
     background: #312420;
 }
@@ -501,6 +502,7 @@ nav {
 
 /* ======= Banner 1 Bed & Breakfast ======= */
 .banner1 {
+    margin-top: 5px;
     background: #473631;
     padding: 35px 0 38px;
     overflow: hidden;
@@ -1367,6 +1369,7 @@ nav {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    color: #312420;
 }
 
 .media-heading {
@@ -1635,8 +1638,65 @@ nav {
 .table-main-price {
     border-collapse: collapse;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .table-main-price tr td {
     border: 1px solid;
 }
+
+.b-reviews {
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
+    background-color: #312420;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    color: white;
+    box-shadow: 0px 6px 35px -9px black;
+}
+
+.b-reviews__data {
+    text-align: right;
+}
+
+.b-page__header {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 15px 0 15px 0;
+
+}
+
+.b-reviews__user {
+    text-align: right;
+}
+
+.well {
+    border: 1px solid #312420;
+    background-color: #312420;
+    color: white;
+    box-shadow: 0px 6px 35px -9px black;
+}
+
+.slider-wrapper {
+    margin-top: 20px;
+}
+
+.my-slider__slide {
+    height: 330px;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+}
+
+.my-slider_container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.my-slider_logo {
+    width: 300px;
+    margin: 0 auto;
+}
+
+

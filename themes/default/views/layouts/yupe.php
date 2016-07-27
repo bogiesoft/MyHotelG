@@ -100,7 +100,7 @@
                                                 data-wow-delay="0.1s">Усадьба НИКА </span></a>
                                     </h1>
                                     <hr style="width: 50%;margin: 3px auto">
-                                    <div class="logo-title__description">Отдых в Горном Алтае </div>
+                                    <div class="logo-title__description">Отдых в Горном Алтае</div>
 
                                 </div>
 
@@ -108,7 +108,8 @@
                             </div>
 
                         </div>
-                        <div class="grass-substrate" style="background-image: url('/themes/default/web/images/grasssubstrate.png')">
+                        <div class="grass-substrate"
+                             style="background-image: url('/themes/default/web/images/grasssubstrate.png')">
 
                         </div>
                     </div>
@@ -123,7 +124,7 @@
                                     <ul class="sf-menu">
                                         <li><a
                                                 href="/"
-                                                class="sf-with-ul">Главная</a>
+                                                class="sf-with-ul"1>Главная</a>
                                         </li>
                                         <li><a href="#">Галерея <i class="caret"></i></a>
                                             <ul>
@@ -140,27 +141,27 @@
                                                 <li> Ника зимой</li>
                                             </ul>
                                         </li>
-                                        <li><a href="/store">Номера <i class="caret"></i></a>
+                                        <li><a href="#">Номера <i class="caret"></i></a>
                                             <ul>
                                                 <li><a href="/store/korpus-1"> Корпус 1 </a></li>
-                                                <li>Корпус 2</li>
-                                                <li>Корпус 3</li>
+                                                <li><a href="/store/korpus-2"> Корпус 2 </a></li>
+                                                <li><a href="/store/korpus-3"> Корпус 3 </a></li>
                                                 <li>Корпус 4</li>
                                                 <li>Корпус 5</li>
                                                 <li>Корпус 6</li>
                                                 <li>Корпус 7</li>
                                             </ul>
                                         </li>
-                                        <li><a href="#"> О нас</a></li>
+                                        <li><a href="/o-nas"> О нас</a></li>
                                         <li><a href="#">Гостям <i class="caret"></i></a>
                                             <ul>
                                                 <li>Правила проживания</li>
                                                 <li>Схема <br> территории</li>
-                                                <li><a href="/otzyvy"> Отзывы </a></li>
+                                                <li><a href="/review/show"> Отзывы </a></li>
                                             </ul>
                                         </li>
                                         <li><a href="/news">Новости</a></li>
-                                        <li><a href="#"> Контакты</a></li>
+                                        <li><a href="/kontaktnye-dannye"> Контакты</a></li>
                                     </ul>
                                     <div class="clearfix"></div>
                                 </nav>
@@ -198,28 +199,8 @@
                     <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
                          style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: none;">
                         © <span id="copyright-year">2016</span> <a
-                            href="http://livedemo00.template-help.com/wt_53471/index-6.html">Privacy Policy</a>
+                            href="/#">Усадьба Ника</a>
                         <!--{%FOOTER_LINK} -->
-                    </div>
-                    <div class="links">
-                        <ul>
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
-                                style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: none;">
-                                <a href="/#">Support</a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                                style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                                <a href="/#">FAQs</a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
-                                style="visibility: visible; animation-duration: 1s; animation-delay: 0.3s; animation-name: none;">
-                                <a href="/#">Sitemap</a>
-                            </li>
-                            <li class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s"
-                                style="visibility: visible; animation-duration: 1s; animation-delay: 0.4s; animation-name: none;">
-                                <a href="/#">Help</a>
-                            </li>
-                        </ul>
                     </div>
                     <div class="cleafix"></div>
                 </div>

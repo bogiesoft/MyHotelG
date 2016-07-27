@@ -1,9 +1,13 @@
-<div class="slider-wrapper" style="height: auto;">
+<div class="slider-wrapper">
     <div class="my-slider">
+        <div class="my-slider_container">
+        </div>
         <ul>
-            <?php foreach ($items as $item):?>
+            <?php foreach ($items as $item): ?>
                 <li>
-                    <img src="<?=$item["image"] ?>" alt = "<?=$item["label"]; ?>" />
+                    <div class="my-slider__slide" style="background-image: url('<?= $item["image"] ?>')">
+
+                    </div>
                 </li>
             <?php endforeach; ?>
         </ul>

@@ -32,6 +32,9 @@
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/unslider-dots.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/user-popup-info.css');
     Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/lightslider.css');
+    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/jquery-ui.css');
+    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/jquery-ui.structure.css');
+    Yii::app()->getClientScript()->registerCssFile($this->mainAssets . '/css/jquery-ui.theme.css');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/blog.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/bootstrap-notify.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.li-translit.js');
@@ -67,7 +70,76 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/lightslider.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/masonry.pkgd.min.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/hoverIntent.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery-ui.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.validate.min.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.inputmask.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/mail-script.js');
     ?>
+    <script>
+        $(function () {
+            var dateFormat = "mm/dd/yy",
+                from = $("#datepicker-from")
+                    .datepicker({
+                        numberOfMonths: 1,
+                        minDate: 0,
+                        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+                        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+                        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                        closeText: 'Закрыть',
+                        prevText: '&#x3c;Пред',
+                        nextText: 'След&#x3e;',
+                        currentText: 'Сегодня',
+                    })
+                    .on("change", function () {
+                        to.datepicker("option", "minDate", getDate(this));
+                    }),
+                to = $("#datepicker-to").datepicker({
+                    numberOfMonths: 1,
+                    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+                    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+                    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                    closeText: 'Закрыть',
+                    prevText: '&#x3c;Пред',
+                    nextText: 'След&#x3e;',
+                    currentText: 'Сегодня',
+                })
+                    .on("change", function () {
+                        from.datepicker("option", "maxDate", getDate(this));
+                    });
+
+            function getDate(element) {
+                var date;
+                try {
+                    date = $.datepicker.parseDate(dateFormat, element.value);
+                } catch (error) {
+                    date = null;
+                }
+
+                return date;
+            }
+        });
+
+
+    </script>
+    <script>
+        $(function () {
+            $("#rooms").selectmenu();
+            $("#people")
+                .selectmenu()
+                .selectmenu("menuWidget")
+                .addClass("overflow")
+
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#phone").inputmask("+7(999)999-99-99")
+        });
+    </script>
     <script type="text/javascript">
         var yupeTokenName = '<?= Yii::app()->getRequest()->csrfTokenName;?>';
         var yupeToken = '<?= Yii::app()->getRequest()->getCsrfToken();?>';
@@ -124,7 +196,7 @@
                                     <ul class="sf-menu">
                                         <li><a
                                                 href="/"
-                                                class="sf-with-ul"1>Главная</a>
+                                                class="sf-with-ul" 1>Главная</a>
                                         </li>
                                         <li><a href="#">Галерея <i class="caret"></i></a>
                                             <ul>

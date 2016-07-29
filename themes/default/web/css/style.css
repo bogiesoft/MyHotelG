@@ -1699,4 +1699,95 @@ nav {
     margin: 0 auto;
 }
 
+.b-sidebar {
+    background-color: #312420;
+    color: white;
+    border-radius: 5px;
+    min-height: 760px;
+    padding-top: 15px;
+
+}
+
+.b-widget-order {
+    color: white;
+    margin: 10px;
+    border: 1px solid rgb(76, 60, 55);
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.b-widget-order__title {
+    text-align: center;
+    font-size: 20px;
+    font-variant: small-caps;
+    margin-bottom: 10px;
+}
+
+.f-order__label {
+    font-size: 16px;
+    font-variant: small-caps;
+    margin-bottom: 5px;
+}
+
+.f-order__input {
+    transition: .4s;
+    display: block;
+    width: 100%;
+    background-color: #362b28;
+    border: 1px solid rgb(76, 60, 55);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.f-order__input:focus {
+    background-color: #2c2422;
+}
+
+.f-order__datepicker {
+    transition: .4s;
+    display: block;
+    width: 100%;
+    background-color: #362b28;
+    border: 1px solid rgb(76, 60, 55);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.f-order__datepicker:focus {
+    background-color: #2c2422;
+}
+
+.f-order__area {
+    transition: .4s;
+    display: block;
+    width: 100%;
+    background-color: #362b28;
+    border: 1px solid rgb(76, 60, 55);
+    padding: 5px;
+    margin-bottom: 10px;
+    resize: none;
+    height: 70px;
+}
+
+.f-order__area:focus {
+    background-color: #2c2422;
+}
+
+.f-order__btn-order {
+    border: none;
+    background-color: #43A047;
+    color: white;
+    padding: 11px;
+    height: 60px;
+    width: 70%;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: .4s;
+}
+
+.f-order__btn-order:hover {
+    background-color: #2E7D32;
+}
+
 

@@ -7,18 +7,19 @@ $this->pageTitle = "Отзывы";
 </div>
 
 <div>
-    <?php $this->widget(
-        'zii.widgets.CListView',
-        array(
-            'dataProvider' => $dataProvider,
-            'itemView' => '_view',
-            'summaryText' => '',
-            'pager' => array(
-                'maxButtonCount' => '5',
-            ),
-            'pagerCssClass' => 'pagination',
-        )
-    ); ?>
+
+    <div><?php $this->widget(
+            'zii.widgets.CListView',
+            array(
+                'dataProvider' => $dataProvider,
+                'itemView' => '_view',
+                'summaryText' => '',
+                'pager' => array(
+                    'maxButtonCount' => '5',
+                ),
+                'pagerCssClass' => 'pagination',
+            )
+        ); ?></div>
 </div>
 <div style="text-align: center;margin-top: 10px">
     <h2>Оставьте свой отзывы</h2>

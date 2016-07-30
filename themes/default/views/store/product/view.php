@@ -19,24 +19,123 @@ $this->breadcrumbs = array_merge(
     [CHtml::encode($product->name)]
 );
 ?>
-<div class="row" style="margin-top: 15px;">
+<div class="row">
     <div class="grid_8">
-        <h1 class="product__title"><?= CHtml::encode($product->getTitle()); ?></h1>
+        <div>
+            <h1 class="product__title">
+                <?= CHtml::encode($product->getTitle()); ?></h1>
+            <div style="clear: both">
+
+            </div>
+        </div>
+
+        <hr style="margin-top: 3px">
+        <div class="product__description">
+            <div>
+                <div class="product__price" style="float: right">
+                    Стоимость <?= round($product->getBasePrice(), 2); ?> руб
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <?= $product->description; ?>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="grid_4" style="padding: 20px">
+                <div class="b-product-image" style="background-image: url('<?= StoreImage::product($product); ?>')">
+                    <a class="fancybox b-product-image__link" href="<?= StoreImage::product($product); ?>"></a>
+                </div>
+            </div>
+            <?php foreach ($product->getImages() as $key => $image): { ?>
+                <div class="grid_4" style="padding: 20px">
+                    <div class="b-product-image" style="background-image: url('<?= $image->getImageUrl(); ?>')">
+                        <a class="fancybox b-product-image__link" href="<?= $image->getImageUrl(); ?>"></a>
+                    </div>
+                </div>
+            <?php } endforeach; ?>
+        </div>
+
+
+    </div>
+    <div class="grid_4" style="padding: 10px">
+        <div class="b-sidebar">
+            <div class="b-widget__weather">
+            </div>
+            <div class="b-widget-order">
+                <div class="b-widget-order__title">
+                    забронировать номер
+                </div>
+                <hr style="width: 70%;margin: 5px auto">
+                <div class="b-widget-order__body">
+                    <form id="order-form" action="" class="f-order">
+                        <label class="f-order__label" for="username"> Имя* </label>
+                        <input id="username" name="username" class="f-order__input" type="text" required>
+                        <label class="f-order__label" for="phone"> Номер телефона* </label>
+                        <input id="phone" name="phone" class="f-order__input" type="text" required>
+                        <label class="f-order__label" for="people"> Количество человек* </label>
+                        <select id="people" name="people">
+                            <option>1</option>
+                            <option selected="selected">2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label class="f-order__label" for="rooms" style="margin-top: 5px"> Категория
+                            проживания* </label>
+                        <select name="rooms" id="rooms" class="f-order__select">
+                            <optgroup label="Корпус 1">
+                                <option value="Корпус 1 Стандарт">Стандарт</option>
+                                <option value="Корпус 1 Семейный">Семейный</option>
+                                <option value="Корпус 1 Улучшенный">Улучшенный</option>
+                            </optgroup>
+                            <optgroup label="Корпус 2">
+                                <option value="Корпус 2 Стандарт">Стандарт</option>
+                                <option value="Корпус 2 Семейный">Семейный</option>
+                                <option value="Корпус 2 Улучшенный">Улучшенный</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label class="f-order__label" for="datepicker-from">Дата заезда*</label>
+                        <input class="f-order__datepicker" type="text" id="datepicker-from" name="datepicker-from"
+                               required>
+
+                        <label class="f-order__label" for="datepicker-to">Дата выезда*</label>
+                        <input class="f-order__datepicker" type="text" id="datepicker-to" name="datepicker-to" required>
+
+                        <label class="f-order__label" for="email"> E-mail </label>
+                        <input id="email" name="email" class="f-order__input" type="email">
+
+                        <label class="f-order__label" for="comments"> Дополнительная информация </label>
+                        <textarea id="comments" name="comments" class="f-order__area"> </textarea>
+                        <button id="btn-order" type="submit" class="f-order__btn-order"> Отправить заявку</button>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!--<div class="row" style="margin-top: 15px;">
+    <div class="grid_8">
+        <h1 class="product__title"><? /*= CHtml::encode($product->getTitle()); */ ?></h1>
         <div class="slider-wrapper" style="height: auto;">
             <div class="my-slider b-gallery-product">
                 <ul>
                     <li>
                         <div>
-                            <a class="fancybox" href="<?= StoreImage::product($product); ?>">  <img class="b-gallery-product__pic" src="<?= StoreImage::product($product); ?>"/></a>
+                            <a class="fancybox" href="<? /*= StoreImage::product($product); */ ?>">  <img class="b-gallery-product__pic" src="<? /*= StoreImage::product($product); */ ?>"/></a>
                         </div>
                     </li>
-                    <?php foreach ($product->getImages() as $key => $image): { ?>
+                    <?php /*foreach ($product->getImages() as $key => $image): { */ ?>
                         <li>
                             <div>
-                                <a class="fancybox" href=""> <img class="b-gallery-product__pic" src="<?= $image->getImageUrl(); ?>"/></a>
+                                <a class="fancybox" href=""> <img class="b-gallery-product__pic" src="<? /*= $image->getImageUrl(); */ ?>"/></a>
                             </div>
                         </li>
-                    <?php } endforeach; ?>
+                    <?php /*} endforeach; */ ?>
                 </ul>
             </div>
             <div class="clearfix"></div>
@@ -44,20 +143,20 @@ $this->breadcrumbs = array_merge(
     </div>
     <div class="grid_4">
         <div class="b-product__price">
-            <?= round($product->getBasePrice(), 2); ?> руб
+
         </div>
-        <?php $this->widget('application.modules.callback.widgets.CallbackWidget'); ?>
+        <?php /*$this->widget('application.modules.callback.widgets.CallbackWidget'); */ ?>
     </div>
 </div>
 
 <div class="row" style="margin-top: 10px">
     <div class="grid_12">
         <div class="product__description">
-            <?= $product->description; ?>
+
         </div>
     </div>
 </div>
-
+-->
 
 <!--
 

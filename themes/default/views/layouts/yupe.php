@@ -165,20 +165,30 @@
                 <div class="row">
                     <div class="grid_12">
                         <div class="info">
-                            <div style="text-align: center">
-                                <div>
-                                    <h1 class="logo-title"><a href="/"><span
-                                                class="first wow fadeInDown animated" data-wow-duration="1s"
-                                                data-wow-delay="0.1s">Усадьба НИКА </span></a>
-                                    </h1>
-                                    <hr style="width: 50%;margin: 3px auto">
-                                    <div class="logo-title__description">Отдых в Горном Алтае</div>
 
+                            <div class="row">
+
+                                <div class="grid_8">
+                                    <div style="text-align: right">
+                                        <div>
+                                            <h1 class="logo-title"><a href="/"><span
+                                                        class="first">Усадьба НИКА </span></a>
+                                            </h1>
+                                            <div class="logo-title__description">Отдых в Горном Алтае</div>
+
+                                        </div>
+
+                                        <div style="clear: both"></div>
+                                    </div>
+                                </div>
+                                <div class="grid_4">
+                                    <div class="b-info">
+                                        <div style="margin-bottom: 10px">8 (388 41) 27 5 44</div>
+                                        usadbavu@mail.ru
+                                    </div>
                                 </div>
 
-                                <div style="clear: both"></div>
                             </div>
-
                         </div>
                         <div class="grass-substrate"
                              style="background-image: url('/themes/default/web/images/grasssubstrate.png')">
@@ -268,8 +278,7 @@
         <div class="container">
             <div class="row">
                 <div class="grid_12">
-                    <div class="privacy-block wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
-                         style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: none;">
+                    <div class="privacy-block  ">
                         © <span id="copyright-year">2016</span> <a
                             href="/#">Усадьба Ника</a>
                         <!--{%FOOTER_LINK} -->

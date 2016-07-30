@@ -34,6 +34,8 @@ $this->breadcrumbs = array_merge(
     </div>
     <div class="grid_4" style="padding: 10px">
         <div class="b-sidebar">
+            <div class="b-widget__weather">
+            </div>
             <div class="b-widget-order">
                 <div class="b-widget-order__title">
                     забронировать номер

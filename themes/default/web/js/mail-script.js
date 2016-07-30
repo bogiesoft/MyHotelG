@@ -5,7 +5,8 @@ $(document).ready(function() {
             url: "/mail.php",
             data: $(this).serialize()
         }).done(function() {
-            
+            $('#order-form').trigger( 'reset' );
+            $('.b-widget-order__title').text('ваша заявка отправлена');
         });
         return false;
     });

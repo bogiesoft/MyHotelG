@@ -239,7 +239,7 @@
                                         <li><a href="#">Гостям <i class="caret"></i></a>
                                             <ul>
                                                 <li>Правила проживания</li>
-                                                <li>Схема <br> территории</li>
+                                                <li><a href="/karta">   Схема <br> территории </a></li>
                                                 <li><a href="/review/show"> Отзывы </a></li>
                                             </ul>
                                         </li>

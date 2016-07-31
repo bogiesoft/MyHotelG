@@ -15,7 +15,7 @@ $this->breadcrumbs = array_merge(
     $this->breadcrumbs,
     $category->getBreadcrumbs(true)
 ); ?>
-<div class="row">
+<div class="row" style="margin-right: 0">
     <div class="grid_8">
         <h2 style="text-align: center;font-size: 20px;font-weight: bold;margin-top: 10px"><?= CHtml::encode($category->getTitle()); ?></h2>
         <div style="padding: 10px 0 50px 0">

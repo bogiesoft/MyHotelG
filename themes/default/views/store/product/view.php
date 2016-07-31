@@ -19,7 +19,7 @@ $this->breadcrumbs = array_merge(
     [CHtml::encode($product->name)]
 );
 ?>
-<div class="row">
+<div class="row" style="margin-right: 0">
     <div class="grid_8">
         <div>
             <h1 class="product__title">

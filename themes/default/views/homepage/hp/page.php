@@ -31,7 +31,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
         <div class="grid_4">
             <div class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2>Досуг</h2>
+                <h2>Дополнительные услуги</h2>
                                         <span class="heading"><a
                                                 href="/blogs">Читать подробнее</a></span>
                 <p>Praesent vestibuum molestie lacuiirhs. Aenean non ummy hendreriauris.
@@ -41,7 +41,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
         <div class="grid_4">
             <div class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2>Дополнительные услуги</h2>
+                <h2>Досуг</h2>
                                         <span class="heading"><a
                                                 href="/blogs">Читать подробнее</a></span>
                 <p>Praesent vestibuum molestie lacuiirhs. Aenean non ummy hendreriauris.
@@ -49,7 +49,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
             </div>
         </div>
         <div class="grid_12">
-            <div style="text-align: center;color: white;font-size: 16px">
+            <div style="text-align: center;color: white;font-size: 16px;margin-top: 15px">
                 <a href="#"> Скачать договор с агентством <img style="margin-left: 5px" src="/themes/default/web/images/word-Icon.png" height="20px" width="20px" alt=""></a>
             </div>
         </div>

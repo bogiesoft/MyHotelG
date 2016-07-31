@@ -77,9 +77,9 @@
     ?>
     <script>
         $(function () {
-            var dateFormat = "mm/dd/yy",
-                from = $("#datepicker-from")
+             from = $("#datepicker-from")
                     .datepicker({
+                        dateFormat : "dd.mm.yy",
                         numberOfMonths: 1,
                         minDate: 0,
                         monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
@@ -96,6 +96,7 @@
                         to.datepicker("option", "minDate", getDate(this));
                     }),
                 to = $("#datepicker-to").datepicker({
+                    dateFormat : "dd.mm.yy",
                     numberOfMonths: 1,
                     monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
                         'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
@@ -114,7 +115,7 @@
             function getDate(element) {
                 var date;
                 try {
-                    date = $.datepicker.parseDate(dateFormat, element.value);
+                    date = $.datepicker.parseDate(element.value);
                 } catch (error) {
                     date = null;
                 }
@@ -162,14 +163,14 @@
     <div class="big-wrapper">
         <header id="header">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-right: 0">
                     <div class="grid_12">
                         <div class="info">
 
-                            <div class="row">
+                            <div class="row" style="margin-right: 0">
 
                                 <div class="grid_8">
-                                    <div style="text-align: right">
+                                    <div class="info__block" style="text-align: right">
                                         <div>
                                             <h1 class="logo-title"><a href="/"><span
                                                         class="first">Усадьба НИКА </span></a>
@@ -199,11 +200,11 @@
             </div>
             <div id="stuck_container">
                 <div class="container">
-                    <div class="row">
+                    <div class="row" style="margin-right: 0">
                         <div class="grid_12">
                             <div class="menu-wrapper">
                                 <nav>
-                                    <ul class="sf-menu">
+                                    <ul class="sf-menu display-menu">
                                         <li><a
                                                 href="/"
                                                 class="sf-with-ul" 1>Главная</a>
@@ -258,7 +259,7 @@
         =========================================================-->
         <section id="content">
             <div class="container">
-                <div class="row">
+                <div class="row" style="margin-right: 0">
                     <div class="grid_12">
                         <div style="min-height: 960px">
                             <?= $content; ?>
@@ -276,7 +277,7 @@
 <footer id="footer">
     <div class="wrapper">
         <div class="container">
-            <div class="row">
+            <div class="row" style="margin-right: 0">
                 <div class="grid_12">
                     <div class="privacy-block  ">
                         © <span id="copyright-year">2016</span> <a
@@ -292,7 +293,9 @@
 <script>
     $('.my-slider').unslider({
         autoplay: true,
-        arrows: false
+        arrows: false,
+        delay: 5200,
+        speed: 2250
     });
 </script>
 <script type="text/javascript">

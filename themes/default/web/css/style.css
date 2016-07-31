@@ -437,8 +437,19 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
-    .sf-menu {
+    .sf-arrows {
+        display: none !important;
+    }
+
+    .main_branch__pic {
         display: none;
+    }
+    .b-info {
+        text-align: center !important;
+        margin-top: 15px !important;
+    }
+    .info__block {
+        text-align: center !important;
     }
 
     nav {
@@ -504,7 +515,7 @@ nav {
 .banner1 {
     margin-top: 5px;
     background: #473631;
-    padding: 35px 0 38px;
+    padding: 34px 0 30px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 1px 1px 30px -5px;
@@ -1889,13 +1900,41 @@ nav {
 }
 
 .b-info {
-    font-size: 18px;
+    font-size: 20px;
     text-align: right;
     padding: 5px;
+    color: #312420;
+    font-weight: bold;
 }
 
 .b-map-title {
     text-align: center;
     font-size: 25px;
     margin-top: 20px;
+}
+
+.display-menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info__block {
+    text-align: right;
+}
+.b-map__wrapper {
+    display: inline-block;
+    background-color: #fafafa;
+    border: 1px solid #473631;
+    margin-bottom: 15px;
+}
+.b-map {
+    text-align: center;
+}
+#rect3023 {
+    transition: .4s;
+    cursor: pointer;
+}
+
+#rect3023:hover {
+    fill: #473631 !important;
 }

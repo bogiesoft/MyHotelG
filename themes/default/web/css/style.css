@@ -1893,3 +1893,9 @@ nav {
     text-align: right;
     padding: 5px;
 }
+
+.b-map-title {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 20px;
+}

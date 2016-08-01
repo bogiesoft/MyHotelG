@@ -1938,3 +1938,9 @@ nav {
 #rect3023:hover {
     fill: #473631 !important;
 }
+.b-main__text {
+    font-size: 16px;
+    font-family: Georgia,Times,Serif;
+    text-align: justify;
+    line-height: 20px;
+}

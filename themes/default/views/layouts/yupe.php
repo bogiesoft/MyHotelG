@@ -204,49 +204,9 @@
                         <div class="grid_12">
                             <div class="menu-wrapper">
                                 <nav>
-                                    <ul class="sf-menu display-menu">
-                                        <li><a
-                                                href="/"
-                                                class="sf-with-ul" 1>Главная</a>
-                                        </li>
-                                        <li><a href="#">Галерея <i class="caret"></i></a>
-                                            <ul>
-                                                <li><a href="/albums/4">Территория </a></li>
-                                                <li><a href="/albums/5"> Часовня</a></li>
-                                                <li> Баня и Сауна</li>
-                                                <li> Корпус 1</li>
-                                                <li> Корпус 2</li>
-                                                <li> Корпус 3</li>
-                                                <li> Корпус 4</li>
-                                                <li> Корпус 5</li>
-                                                <li> Корпус 6</li>
-                                                <li> Корпус 7</li>
-                                                <li> Ника зимой</li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Номера <i class="caret"></i></a>
-                                            <ul>
-                                                <li><a href="/store/korpus-1"> Корпус 1 </a></li>
-                                                <li><a href="/store/korpus-2"> Корпус 2 </a></li>
-                                                <li><a href="/store/korpus-3"> Корпус 3 </a></li>
-                                                <li>Корпус 4</li>
-                                                <li>Корпус 5</li>
-                                                <li>Корпус 6</li>
-                                                <li>Корпус 7</li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/o-nas"> О нас</a></li>
-                                        <li><a href="#">Гостям <i class="caret"></i></a>
-                                            <ul>
-                                                <li>Правила проживания</li>
-                                                <li><a href="/karta">   Схема <br> территории </a></li>
-                                                <li><a href="/review/show"> Отзывы </a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="/news">Новости</a></li>
-                                        <li><a href="/kontaktnye-dannye"> Контакты</a></li>
-                                    </ul>
-                                    <div class="clearfix"></div>
+                                    <?php if (Yii::app()->hasModule('menu')): ?>
+                                        <?php $this->widget('application.modules.menu.widgets.MenuWidget', ['name' => 'verhnee-menyu']); ?>
+                                    <?php endif; ?>
                                 </nav>
                             </div>
                         </div>

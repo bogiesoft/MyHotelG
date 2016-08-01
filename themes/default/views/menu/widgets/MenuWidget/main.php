@@ -1,36 +1,26 @@
-<?php
-Yii::import('application.modules.menu.components.YMenu');
-$this->widget(
-    'bootstrap.widgets.TbNavbar',
-    [
-        'collapse' => true,
-        'brand' => CHtml::image(
-            Yii::app()->getTheme()->getAssetsUrl() . '/images/logo.png',
-            Yii::app()->name,
-            [
-                'width' => '38',
-                'height' => '38',
-                'title' => Yii::app()->name,
-            ]
-        ),
-        'brandUrl' => Yii::app()->hasModule('homepage') ? ['/homepage/hp/index'] : ['/site/index'],
-        'items' => [
-            CMap::mergeArray(
-                [
-                    'class' => 'YMenu',
-                    'type' => 'navbar',
-                    'items' => $this->params['items'],
-                ],
-                $layoutParams
-            ),
-            [
-                'class' => 'bootstrap.widgets.TbMenu',
-                'type' => 'navbar',
-                'items' => $this->controller->yupe->getLanguageSelectorArray(),
-                'htmlOptions' => [
-                    'class' => 'pull-right',
-                ],
-            ]
-        ],
-    ]
-);
+<ul class="sf-menu display-menu">
+    <?php foreach ($this->params['items'] as $item): ?>
+        <li>
+            <a class="sf-with-ul" href="<?= $item["url"] ?>">
+                <?= $item["label"] ?>
+                <?php if (count($item["items"]) > 0): ?>
+                <i class="caret"></i>
+            </a>
+            <ul>
+                <?php foreach ($item["items"] as $itemChildren): ?>
+                    <li>
+                        <a href="<?= $itemChildren['url'] ?>">  <?= $itemChildren['label'] ?> </a>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
+            <?php else: ?>
+                </a>
+            <?php endif; ?>
+        </li>
+    <?php endforeach; ?>
+</ul>
+<div class="clearfix"></div>
+
+
+
+

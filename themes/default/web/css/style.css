@@ -1943,4 +1943,9 @@ nav {
     font-family: Georgia,Times,Serif;
     text-align: justify;
     line-height: 20px;
+    padding: 15px;
+    border: 1px solid #473631;
+    font-style: italic;
+    background-color: rgba(71, 54, 49, 0.13);
+    color: black;
 }

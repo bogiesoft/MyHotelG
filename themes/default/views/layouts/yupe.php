@@ -186,6 +186,7 @@
                                     <div class="b-info">
                                         <div style="margin-bottom: 10px">8 (388 41) 27 5 44</div>
                                         usadbavu@mail.ru
+                                        <div style="font-size: 13px;margin-top: 5px"> с.Узнезя, ул.Центральная 48, <br> сот: 8903-956-4292 (администратор)</div>
                                     </div>
                                 </div>
 

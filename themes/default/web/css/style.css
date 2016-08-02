@@ -1939,13 +1939,12 @@ nav {
     fill: #473631 !important;
 }
 .b-main__text {
-    font-size: 16px;
-    font-family: Georgia,Times,Serif;
+    font-size: 22px;
     text-align: justify;
-    line-height: 20px;
+    line-height: 27px;
     padding: 15px;
     border: 1px solid #473631;
     font-style: italic;
-    background-color: rgba(71, 54, 49, 0.13);
     color: black;
+    border-radius: 5px;
 }

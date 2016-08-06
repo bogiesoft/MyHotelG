@@ -444,10 +444,12 @@ nav {
     .main_branch__pic {
         display: none;
     }
+
     .b-info {
         text-align: center !important;
         margin-top: 15px !important;
     }
+
     .info__block {
         text-align: center !important;
     }
@@ -1921,15 +1923,19 @@ nav {
 .info__block {
     text-align: right;
 }
+
 .b-map__wrapper {
     display: inline-block;
-    background-color: #fafafa;
+    background-color: #ffffff;
     border: 1px solid #473631;
     margin-bottom: 15px;
+    box-shadow: 1px 1px 30px -8px;
 }
+
 .b-map {
     text-align: center;
 }
+
 #rect3023 {
     transition: .4s;
     cursor: pointer;
@@ -1938,6 +1944,7 @@ nav {
 #rect3023:hover {
     fill: #473631 !important;
 }
+
 .b-main__text {
     font-size: 22px;
     text-align: justify;
@@ -1947,4 +1954,24 @@ nav {
     font-style: italic;
     color: black;
     border-radius: 5px;
+}
+
+/*Часовная,Сауна,Бассейн,Корпус 1,Корпус 2,Корпус 3, Корпус 6,Корпус 7*/
+#path3384, #path3344, #path3364, #path3352, #path3372, #path3370, #path3358, #path3366 {
+    transition: .5s;
+    Stroke-width: 5;
+    fill: green;
+    stroke: transparent;
+    cursor: pointer;
+    transition-timing-function: ease-out;
+}
+
+#path3384:hover, #path3344:hover, #path3364:hover, #path3352:hover, #path3372:hover, #path3370:hover, #path3358:hover, #path3366:hover {
+    fill: black !important;
+    stroke: green !important;
+    Stroke-width: 5 !important;
+    stroke-opacity: .5 !important;
+    Stroke-linecap: round;
+    Stroke-linejoin: round;
+    
 }

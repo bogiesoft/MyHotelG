@@ -1956,22 +1956,69 @@ nav {
     border-radius: 5px;
 }
 
-/*Часовная,Сауна,Бассейн,Корпус 1,Корпус 2,Корпус 3, Корпус 6,Корпус 7*/
-#path3384, #path3344, #path3364, #path3352, #path3372, #path3370, #path3358, #path3366 {
+/*Часовная,Сауна,Бассейн,
+Корпус 1,Корпус 2,Корпус 3,
+ Корпус 6,Корпус 7,Теннисный корт */
+#path3384, #path3344, #path3364,
+#path3352, #path3372, #path3370,
+#path3358, #path3366,
+#path3378, #path3354, #path3346, #path3348 {
     transition: .5s;
     Stroke-width: 5;
     fill: green;
     stroke: transparent;
     cursor: pointer;
     transition-timing-function: ease-out;
+    Stroke-linecap: round;
+    Stroke-linejoin: round;
 }
 
-#path3384:hover, #path3344:hover, #path3364:hover, #path3352:hover, #path3372:hover, #path3370:hover, #path3358:hover, #path3366:hover {
+#path3384:hover, #path3344:hover, #path3364:hover,
+#path3352:hover, #path3372:hover, #path3370:hover,
+#path3358:hover, #path3366:hover,
+#path3378:hover, #path3354:hover, #path3346:hover, #path3348:hover {
     fill: black !important;
     stroke: green !important;
     Stroke-width: 5 !important;
     stroke-opacity: .5 !important;
     Stroke-linecap: round;
     Stroke-linejoin: round;
-    
 }
+
+/*Корпус 5, Оздоровительный центр*/
+#_778803528, #_778797168 {
+    transition: .5s;
+    Stroke-width: 100;
+    fill: green;
+    stroke: transparent;
+    cursor: pointer;
+    transition-timing-function: ease-out;
+    Stroke-linecap: round;
+    Stroke-linejoin: round;
+}
+
+#_778803528:hover, #_778797168:hover {
+    fill: black !important;
+    stroke: green !important;
+    Stroke-width: 100 !important;
+    stroke-opacity: .5 !important;
+    Stroke-linecap: round;
+    Stroke-linejoin: round;
+}
+
+.hint {
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 200px;
+    background: #FFF;
+    border: 1px solid #000;
+    font-size: 18px;
+    padding: 10px;
+    display: none;
+    text-align: center;
+    line-height: 24px;
+}
+
+

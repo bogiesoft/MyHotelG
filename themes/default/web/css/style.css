@@ -1293,7 +1293,7 @@ nav {
     font: 400 11px/18px "Droid Sans", sans-serif;
     background: #312420;
     color: #978782;
-    padding: 49px 0;
+    padding: 20px 0;
 }
 
 #footer .links {
@@ -2012,13 +2012,21 @@ nav {
     top: 0;
     left: 0;
     width: 200px;
+    padding: 25px 10px 10px 10px;
+    height: 100px;
     background: #FFF;
     border: 1px solid #000;
     font-size: 18px;
-    padding: 10px;
     display: none;
     text-align: center;
     line-height: 24px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 30px -1px;
+
 }
 
+.footer-list-menu_item {
+    display: inline-block;
+    margin-right: 5px;
+}
 

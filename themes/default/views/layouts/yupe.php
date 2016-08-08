@@ -77,26 +77,26 @@
     ?>
     <script>
         $(function () {
-             from = $("#datepicker-from")
-                    .datepicker({
-                        dateFormat : "dd.mm.yy",
-                        numberOfMonths: 1,
-                        minDate: 0,
-                        monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
-                            'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
-                        dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
-                        dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
-                        dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
-                        closeText: 'Закрыть',
-                        prevText: '&#x3c;Пред',
-                        nextText: 'След&#x3e;',
-                        currentText: 'Сегодня',
-                    })
-                    .on("change", function () {
-                        to.datepicker("option", "minDate", getDate(this));
-                    }),
+            from = $("#datepicker-from")
+                .datepicker({
+                    dateFormat: "dd.mm.yy",
+                    numberOfMonths: 1,
+                    minDate: 0,
+                    monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+                        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+                    dayNames: ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'],
+                    dayNamesShort: ['вск', 'пнд', 'втр', 'срд', 'чтв', 'птн', 'сбт'],
+                    dayNamesMin: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+                    closeText: 'Закрыть',
+                    prevText: '&#x3c;Пред',
+                    nextText: 'След&#x3e;',
+                    currentText: 'Сегодня',
+                })
+                .on("change", function () {
+                    to.datepicker("option", "minDate", getDate(this));
+                }),
                 to = $("#datepicker-to").datepicker({
-                    dateFormat : "dd.mm.yy",
+                    dateFormat: "dd.mm.yy",
                     numberOfMonths: 1,
                     monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
                         'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
@@ -186,7 +186,9 @@
                                     <div class="b-info">
                                         <div style="margin-bottom: 10px">8 (388 41) 27 5 44</div>
                                         usadbavu@mail.ru
-                                        <div style="font-size: 13px;margin-top: 5px"> с.Узнезя, ул.Центральная 48, <br> сот: 8903-956-4292 (администратор)</div>
+                                        <div style="font-size: 13px;margin-top: 5px"> с.Узнезя, ул.Центральная 48, <br>
+                                            сот: 8903-956-4292 (администратор)
+                                        </div>
                                     </div>
                                 </div>
 
@@ -239,13 +241,23 @@
     <div class="wrapper">
         <div class="container">
             <div class="row" style="margin-right: 0">
-                <div class="grid_12">
+                <div class="grid_6" style="margin: 0">
                     <div class="privacy-block  ">
                         © <span id="copyright-year">2016</span> <a
                             href="/#">Усадьба Ника</a>
+                        <br>
+                        <div>
+                            Теонфон 8-(388-41)-27-5-44, E-mail: usadbavu@mail.ru
+                        </div>
                         <!--{%FOOTER_LINK} -->
                     </div>
                     <div class="cleafix"></div>
+                </div>
+                <div class="grid_6" style="text-align: right;margin: 0">
+                    с.Узнезя, ул.Центральная 48,
+                    <br>
+                    сот: 8903-956-4292 (администратор)
+                    <br>
                 </div>
             </div>
         </div>

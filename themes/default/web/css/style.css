@@ -2030,3 +2030,63 @@ nav {
     margin-right: 5px;
 }
 
+.b-news__description {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.b-post__description {
+    padding: 5px;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: justify;
+}
+
+.b-additional-services table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.b-additional-services table tbody tr td {
+    padding: 10px;
+    border: 1px solid #312420;
+}
+
+.b-additional-services table tbody tr:nth-child(1) {
+    background-color: #463b38 !important;
+    color: white !important;
+    font-size: 16px !important;
+}
+
+.b-additional-services table tbody tr:nth-child(2n+1) {
+    background-color: #efefdc;
+}
+
+.b-additional-services table tbody tr td:nth-child(1) {
+    width: 20%;
+}
+
+.b-additional-services table tbody tr td:nth-child(2) {
+    width: 50%;
+}
+
+.b-additional-services table tbody tr td:nth-child(3) {
+    width: 30%;
+}
+
+.b-health-center {
+    font-size: 18px;
+    line-height: 24px;
+    text-align: justify;
+}
+.list-health-center {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.list-health-center li {
+    display: block;
+    margin: 5px;
+}

@@ -43,13 +43,13 @@ $this->breadcrumbs = array_merge(
         <div class="row">
             <div class="grid_4" style="padding: 20px">
                 <div class="b-product-image" style="background-image: url('<?= StoreImage::product($product); ?>')">
-                    <a class="fancybox b-product-image__link" href="<?= StoreImage::product($product); ?>"></a>
+                    <a rel="group" class="fancybox b-product-image__link" href="<?= StoreImage::product($product); ?>"></a>
                 </div>
             </div>
             <?php foreach ($product->getImages() as $key => $image): { ?>
                 <div class="grid_4" style="padding: 20px">
                     <div class="b-product-image" style="background-image: url('<?= $image->getImageUrl(); ?>')">
-                        <a class="fancybox b-product-image__link" href="<?= $image->getImageUrl(); ?>"></a>
+                        <a rel="group" class="fancybox b-product-image__link" href="<?= $image->getImageUrl(); ?>"></a>
                     </div>
                 </div>
             <?php } endforeach; ?>

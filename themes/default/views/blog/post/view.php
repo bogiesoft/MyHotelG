@@ -31,7 +31,7 @@ $this->breadcrumbs = [
         <div style="text-align: center">
            <h2> <?= CHtml::encode($post->title); ?> </h2>
         </div>
-        <div>
+        <div class="b-post__description">
             <?= $post->content; ?>
         </div>
     </div>

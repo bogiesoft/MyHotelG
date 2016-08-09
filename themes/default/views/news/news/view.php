@@ -30,22 +30,18 @@ $this->breadcrumbs = [
         margin: 10px;
     }
 </style>
-
-<div class="post">
     <div class="row">
         <div class="col-sm-12">
-            <h2><strong><?= CHtml::encode($model->title); ?></strong></h2>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-sm-12">
-            <?php if ($model->image): ?>
-                <?= CHtml::image($model->getImageUrl(), $model->title); ?>
-            <?php endif; ?>
-            <p>
-                <div style="font-size: 18px;font-family: Arial,Helvetica,Serif">
+            <div class="b-news__description">
+                <h2 style="text-align: center;margin-top: 10px"><strong><?= CHtml::encode($model->title); ?></strong></h2>
+                <br>
                 <?= $model->full_text; ?></p>
-        </div>
+            </div>
+            <div class="row">
+                <?php if ($model->image): ?>
+                    <div class="col-lg-4">  <?= CHtml::image($model->getImageUrl(), $model->title); ?></div>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </div>

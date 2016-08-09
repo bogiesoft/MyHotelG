@@ -15,7 +15,7 @@
         <?php endif; ?>')">
 
         </div>
-            <div style="max-height: 30px;overflow: hidden">
+            <div style="max-height: 30px;overflow: hidden;margin-top: 15px">
             <?= $data->short_text; ?>
         </div>
         <?= CHtml::link(Yii::t('NewsModule.news', 'read...'), ['/news/news/view/', 'slug' => $data->slug], ['class' => 'btn btn-default']); ?>

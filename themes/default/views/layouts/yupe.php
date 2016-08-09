@@ -184,10 +184,9 @@
                                 </div>
                                 <div class="grid_4">
                                     <div class="b-info">
-                                        <div style="margin-bottom: 10px">8 (388 41) 27 5 44</div>
+                                        <div style="margin-bottom: 10px">8 903 956 4292</div>
                                         usadbavu@mail.ru
                                         <div style="font-size: 13px;margin-top: 5px"> с.Узнезя, ул.Центральная 48, <br>
-                                            сот: 8903-956-4292 (администратор)
                                         </div>
                                     </div>
                                 </div>
@@ -247,7 +246,7 @@
                             href="/#">Усадьба Ника</a>
                         <br>
                         <div>
-                            Теонфон 8-(388-41)-27-5-44, E-mail: usadbavu@mail.ru
+                            Телефон 8-903-956-4292, E-mail: usadbavu@mail.ru
                         </div>
                         <!--{%FOOTER_LINK} -->
                     </div>
@@ -255,8 +254,6 @@
                 </div>
                 <div class="grid_6" style="text-align: right;margin: 0">
                     с.Узнезя, ул.Центральная 48,
-                    <br>
-                    сот: 8903-956-4292 (администратор)
                     <br>
                 </div>
             </div>

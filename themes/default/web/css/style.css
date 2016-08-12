@@ -373,12 +373,16 @@ nav {
     z-index: 2;
 
 }
-
+.sf-menu ul li:nth-child(1)
+{
+    margin-top: 0 !important;
+}
 .sf-menu ul li {
     position: relative;
     display: block;
     color: white;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .sf-menu ul li:hover {
@@ -407,6 +411,7 @@ nav {
     color: white;
     cursor: pointer;
     text-decoration: none !important;
+    line-height: 18px;
 }
 
 .sf-menu ul li a:hover {
@@ -1385,6 +1390,7 @@ nav {
     font-weight: bold;
     text-align: center;
     color: #312420;
+    line-height: 36px;
 }
 
 .media-heading {

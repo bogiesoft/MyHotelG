@@ -45,7 +45,7 @@ $this->breadcrumbs = array_merge(
                     <form id="order-form" action="" class="f-order">
                         <label class="f-order__label" for="username"> Имя* </label>
                         <input id="username" name="username" class="f-order__input" type="text" required>
-                        <label class="f-order__label" for="phone" > Номер телефона* </label>
+                        <label class="f-order__label" for="phone"> Номер телефона* </label>
                         <input id="phone" name="phone" class="f-order__input" type="text" required>
                         <label class="f-order__label" for="people"> Количество человек* </label>
                         <select id="people" name="people">
@@ -61,17 +61,24 @@ $this->breadcrumbs = array_merge(
                             <optgroup label="Корпус 1">
                                 <option value="Корпус 1 Стандарт">Стандарт</option>
                                 <option value="Корпус 1 Семейный">Семейный</option>
-                                <option value="Корпус 1 Улучшенный">Улучшенный</option>
                             </optgroup>
-                            <optgroup label="Корпус 2">
-                                <option value="Корпус 2 Стандарт">Стандарт</option>
-                                <option value="Корпус 2 Семейный">Семейный</option>
-                                <option value="Корпус 2 Улучшенный">Улучшенный</option>
+                            <optgroup label="Корпус 3">
+                                <option value="Корпус 3 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 5">
+                                <option value="Корпус 5 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 6">
+                                <option value="Корпус 1 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 7">
+                                <option value="Корпус 1 Семейный">Семейный</option>
                             </optgroup>
                         </select>
                         <br>
                         <label class="f-order__label" for="datepicker-from">Дата заезда*</label>
-                        <input class="f-order__datepicker" type="text" id="datepicker-from" name="datepicker-from" required>
+                        <input class="f-order__datepicker" type="text" id="datepicker-from" name="datepicker-from"
+                               required>
 
                         <label class="f-order__label" for="datepicker-to">Дата выезда*</label>
                         <input class="f-order__datepicker" type="text" id="datepicker-to" name="datepicker-to" required>

@@ -74,6 +74,7 @@
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.validate.min.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/jquery.inputmask.js');
     Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/mail-script.js');
+    Yii::app()->getClientScript()->registerScriptFile($this->mainAssets . '/js/camera.js');
     ?>
     <script>
         $(function () {
@@ -260,6 +261,7 @@
         </div>
     </div>
 </footer>
+
 <script>
     $('.my-slider').unslider({
         autoplay: true,
@@ -268,6 +270,15 @@
         speed: 2250
     });
 </script>
+<script>
+    $('.my-slider-news').unslider({
+        autoplay: true,
+        arrows: false,
+        delay: 5200,
+        speed: 2250
+    });
+</script>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $(".fancybox").fancybox();
@@ -279,7 +290,6 @@
         $('ul.sf-menu').superfish();
     });
 </script>
-
 <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0">
 
 

@@ -373,10 +373,11 @@ nav {
     z-index: 2;
 
 }
-.sf-menu ul li:nth-child(1)
-{
+
+.sf-menu ul li:nth-child(1) {
     margin-top: 0 !important;
 }
+
 .sf-menu ul li {
     position: relative;
     display: block;
@@ -2088,11 +2089,60 @@ nav {
     line-height: 24px;
     text-align: justify;
 }
+
 .list-health-center {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .list-health-center li {
     display: block;
     margin: 5px;
 }
+
+.b-main-last-news {
+
+}
+
+.my-slider-news__pic {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    width: 100%;
+    height: 400px;
+}
+
+.my-slider-news__description {
+    height: 145px;
+    position: absolute;
+    bottom: -415px;
+    background-color: rgba(49, 36, 32, 0.9);
+    color: white;
+    text-align: justify;
+}
+
+.my-slider-news_text {
+    padding: 15px;
+    height: 80px;
+    overflow: hidden;
+    text-align: justify;
+}
+
+.my-slider-next {
+    text-align: right;
+    padding: 15px
+}
+
+.my-slider-next a {
+    font-size: 16px;
+}
+.main-paga-text {
+    padding: 15px;
+    font-size: 18px;
+    line-height: 28px;
+    font-family: Arial,Helvetica,Sans-Serif;
+    text-align: justify;
+}
+
+
+

@@ -23,8 +23,6 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                     Оздоровительный центр </h2>
                                         <span class="heading"><a
                                                 href="/ozdorovitelnyy-centr">Читать подробнее</a></span>
-                <p>Lorem ipsum dolor sit amet, conc tet
-                    er adipi scing. Praesent vestibuum mol</p>
             </div>
         </div>
 
@@ -34,8 +32,6 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                 <h2>Дополнительные услуги</h2>
                                         <span class="heading"><a
                                                 href="/dopolnitelnye-uslugi">Читать подробнее</a></span>
-                <p>Praesent vestibuum molestie lacuiirhs. Aenean non ummy hendreriauris.
-                    Phasellllus porta.</p>
             </div>
         </div>
         <div class="grid_4">
@@ -44,8 +40,6 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                 <h2>Досуг</h2>
                                         <span class="heading"><a
                                                 href="/blogs">Читать подробнее</a></span>
-                <p>Praesent vestibuum molestie lacuiirhs. Aenean non ummy hendreriauris.
-                    Phasellllus porta.</p>
             </div>
         </div>
         <div class="grid_12">
@@ -59,25 +53,92 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
 </div>
 <hr>
 <div class="row">
-    <div class="grid_12">
-        <div class="b-main__text">
-            <p>
-                <srong>Усадьба "Ника"-идеальное место,</srong>
-                чтобы почувствовать энергию гор, полюбоваться величественной рекой
-                Катунь и
-                находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
-                комфорта.
-            </p>
-            <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
-                <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
+<div class="grid_8">
+<div style="padding: 15px" class="main-paga-text">
+    <p style="text-align: center;font-weight: bold;font-size: 20px">
+        <srong>Усадьба "Ника" </srong>
+        <br></p>
+        <p>Идеальное место, чтобы почувствовать энергию гор, полюбоваться величественной рекой
+        Катунь и
+        находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
+        комфорта.
+    </p>
+    <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
+        <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
+    <hr style="margin-bottom: 3px">
+</div>
+    <hr>
+    <div>
+        <?php $this->widget('application.modules.news.widgets.LastNewsWidget'); ?>
+    </div>
+</div>
+    <div class="grid_4" style="padding: 10px">
+        <div class="b-sidebar" style="min-height: 680px">
+            <div class="b-widget__weather">
+            </div>
+            <div class="b-widget-order">
+                <div class="b-widget-order__title">
+                    забронировать номер
+                </div>
+                <hr style="width: 70%;margin: 5px auto">
+                <div class="b-widget-order__body">
+                    <form id="order-form" action="" class="f-order">
+                        <label class="f-order__label" for="username"> Имя* </label>
+                        <input id="username" name="username" class="f-order__input" type="text" required>
+                        <label class="f-order__label" for="phone"> Номер телефона* </label>
+                        <input id="phone" name="phone" class="f-order__input" type="text" required>
+                        <label class="f-order__label" for="people"> Количество человек* </label>
+                        <select id="people" name="people">
+                            <option>1</option>
+                            <option selected="selected">2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                        <label class="f-order__label" for="rooms" style="margin-top: 5px"> Категория
+                            проживания* </label>
+                        <select name="rooms" id="rooms" class="f-order__select">
+                            <optgroup label="Корпус 1">
+                                <option value="Корпус 1 Стандарт">Стандарт</option>
+                                <option value="Корпус 1 Семейный">Семейный</option>
+                            </optgroup>
+                            <optgroup label="Корпус 3">
+                                <option value="Корпус 3 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 5">
+                                <option value="Корпус 5 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 6">
+                                <option value="Корпус 1 Стандарт">Стандарт</option>
+                            </optgroup>
+                            <optgroup label="Корпус 7">
+                                <option value="Корпус 1 Семейный">Семейный</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label class="f-order__label" for="datepicker-from">Дата заезда*</label>
+                        <input class="f-order__datepicker" type="text" id="datepicker-from" name="datepicker-from"
+                               required>
+
+                        <label class="f-order__label" for="datepicker-to">Дата выезда*</label>
+                        <input class="f-order__datepicker" type="text" id="datepicker-to" name="datepicker-to" required>
+
+                        <label class="f-order__label" for="email"> E-mail </label>
+                        <input id="email" name="email" class="f-order__input" type="email">
+
+                        <label class="f-order__label" for="comments"> Дополнительная информация </label>
+                        <textarea id="comments" name="comments" class="f-order__area"> </textarea>
+                        <button id="btn-order" type="submit" class="f-order__btn-order"> Отправить заявку</button>
+
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
 </div>
-<hr>
 <div class="row">
     <div class="grid_12">
         <div class="b-sponsors">
-            <hr>
             <div class="b-sponsors__title">
                 Наши партнеры
             </div>

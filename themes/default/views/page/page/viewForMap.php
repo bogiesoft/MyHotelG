@@ -2840,42 +2840,42 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
             /*Часовня*/
             $("#path3384").click(
                 function () {
-                    var urlChapelt = "/tdd";
+                    var urlChapelt = "/albums/5";
                     $(location).attr('href', urlChapelt);
                 }
             );
             /*Сауна*/
             $("#path3344").click(
                 function () {
-                    var urlSauna = "/tdd";
+                    var urlSauna = "/albums/12";
                     $(location).attr('href', urlSauna);
                 }
             );
             /*Бассейн*/
             $("#path3364").click(
                 function () {
-                    var urlPool = "/tdd";
+                    var urlPool = "/albums/11";
                     $(location).attr('href', urlPool);
                 }
             );
             /*Корпус 1*/
             $("#path3352").click(
                 function () {
-                    var urlHousingOne = "/tdd";
+                    var urlHousingOne = "/albums/4";
                     $(location).attr('href', urlHousingOne);
                 }
             );
             /*Корпус 2*/
             $("#path3372").click(
                 function () {
-                    var urlHousingTwo = "/tdd";
+                    var urlHousingTwo = "/albums/6";
                     $(location).attr('href', urlHousingTwo);
                 }
             );
             /*Корпус 3*/
             $("#path3370").click(
                 function () {
-                    var urlHousingThree = "/tdd";
+                    var urlHousingThree = "/albums/7";
                     $(location).attr('href', urlHousingThree);
                 }
             );
@@ -2889,17 +2889,61 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
             /*Корпус 5*/
             $("#_778803528").click(
                 function () {
-                    var urlHousingFive = "/tdd";
+                    var urlHousingFive = "/albums/8";
                     $(location).attr('href', urlHousingFive);
                 }
             );
+
             /*Корпус 7*/
             $("#path3366").click(
                 function () {
-                    var urlHousingSeven = "/tdd";
+                    var urlHousingSeven = "/albums/10";
                     $(location).attr('href', urlHousingSeven);
                 }
             );
+
+            /*Оздоровительный центр*/
+            $("#_778797168").click(
+                function () {
+                    var urlHousingSeven = "/ozdorovitelnyy-centr";
+                    $(location).attr('href', urlHousingSeven);
+                }
+            );
+
+            /*Теннисный корт*/
+            $("#path3346").click(
+                function () {
+                    var urlHousingSeven = "/albums/11";
+                    $(location).attr('href', urlHousingSeven);
+                }
+            );
+
+
+            /*Летнее кафе*/
+            $("#path3354").click(
+                function () {
+                    var urlHousingSeven = "/albums/14";
+                    $(location).attr('href', urlHousingSeven);
+                }
+            );
+
+            /*Смотровые площадки*/
+            $("#path3348").click(
+                function () {
+                    var urlHousingSeven = "/albums/11";
+                    $(location).attr('href', urlHousingSeven);
+                }
+            );
+
+            /*Прачечная*/
+            $("#path3378").click(
+                function () {
+                    var urlHousingSeven = "/albums/11";
+                    $(location).attr('href', urlHousingSeven);
+                }
+            );
+
+
         }
     )
 </script>
@@ -3034,9 +3078,5 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
             }).mouseleave(function () {
             $("#hintViewpoints").hide();
         });
-
-
-
-
     });
 </script>

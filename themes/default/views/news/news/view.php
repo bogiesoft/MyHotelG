@@ -36,8 +36,8 @@ $this->breadcrumbs = [
             <h2 style="text-align: center;margin-top: 10px"><strong><?= CHtml::encode($model->title); ?></strong></h2>
             <br>
             <?php if ($model->image): ?>
-                <img src="<?= $model->getImageUrl() ?>" alt=""
-                     style="max-width: 500px;width: 100%;margin-right: 20px;margin-bottom:20px;float: left">
+                <a class="fancybox" href="<?= $model->getImageUrl() ?>"><img src="<?= $model->getImageUrl() ?>" alt=""
+                                style="max-width: 500px;width: 100%;margin-right: 20px;margin-bottom:20px;float: left"></a>
             <?php endif; ?>
             <?= $model->full_text; ?></p>
         </div>

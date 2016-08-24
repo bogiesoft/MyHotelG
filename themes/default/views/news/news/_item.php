@@ -1,7 +1,7 @@
 <?php
 /* @var $data News */
 ?>
-<div class="grid_6">
+<div class="grid_6" style="margin-bottom: 10px">
     <div class="post2 wow fadeInUp animated" data-wow-duration="1s"
          data-wow-delay="0.2s"
          style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: fadeInUp;">

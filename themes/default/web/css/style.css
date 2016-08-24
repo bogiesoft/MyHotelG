@@ -2072,6 +2072,10 @@ nav {
     background-color: #efefdc;
 }
 
+.titleh2 {
+    font-family: "arial-black" !important;
+}
+
 .b-additional-services table tbody tr td:nth-child(1) {
     width: 20%;
 }
@@ -2091,13 +2095,7 @@ nav {
 }
 
 .list-health-center {
-    margin-top: 15px;
     margin-bottom: 15px;
-}
-
-.list-health-center li {
-    display: block;
-    margin: 5px;
 }
 
 .b-main-last-news {
@@ -2136,13 +2134,22 @@ nav {
 .my-slider-next a {
     font-size: 16px;
 }
+
 .main-paga-text {
     padding: 15px;
     font-size: 18px;
     line-height: 28px;
-    font-family: Arial,Helvetica,Sans-Serif;
+    font-family: Arial, Helvetica, Sans-Serif;
     text-align: justify;
 }
 
-
-
+.health-center__link {
+    padding-left: 10px;
+    text-decoration: none !important;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    color: #312420;
+    word-wrap: break-word;
+}

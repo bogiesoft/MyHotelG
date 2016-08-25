@@ -6,6 +6,7 @@ $username = trim($_POST["username"]);
 $phone = trim($_POST["phone"]);
 $people = trim($_POST["people"]);
 $rooms = trim($_POST["rooms"]);
+$medicalCenter = trim($_POST["medicalCenter"]);
 $datepickerfrom = trim($_POST["datepicker-from"]);
 $datepickerto = trim($_POST["datepicker-to"]);
 $email = trim($_POST["email"]);
@@ -31,6 +32,7 @@ $message = "<table width='100%' cellspacing='0' cellpadding='0' border='0' style
 									<td style='width:100px;padding:5px;background:#463b38;color:white;border:1px solid black'> Дата Заезда</td>
 									<td style='width:100px;padding:5px;background:#463b38;color:white;border:1px solid black'> Дата Выезда</td>
 									<td style='width:100px;padding:5px;background:#463b38;color:white;border:1px solid black'> E-mail</td>
+									<td style='width:100px;padding:5px;background:#463b38;color:white;border:1px solid black'> Мед.Центр</td>
                                 </tr>
 								<tr>
                                     <td style='width:100px;padding:5px;border:1px solid #463b38;background:#ffffff;vertical-align: top;'> $username</td>
@@ -40,12 +42,13 @@ $message = "<table width='100%' cellspacing='0' cellpadding='0' border='0' style
 									<td style='width:100px;padding:5px;border:1px solid #463b38;background:#ffffff;vertical-align: top;'> $datepickerfrom </td>
 									<td style='width:100px;padding:5px;border:1px solid #463b38;background:#ffffff;vertical-align: top;'> $datepickerto </td>
 									<td style='width:100px;padding:5px;border:1px solid #463b38;background:#ffffff;vertical-align: top;'> $email </td>
+									<td style='width:100px;padding:5px;border:1px solid #463b38;background:#ffffff;vertical-align: top;'> $medicalCenter </td>
                                 </tr>
 								<tr>
-								<td colspan='7' style='padding:10px;border:1px solid #463b38;'> Дополнительный комментарий к бронированию </td>
+								<td colspan='8' style='padding:10px;border:1px solid #463b38;'> Дополнительный комментарий к бронированию </td>
 								</tr>
 								<tr>
-								<td colspan='7' style='padding:15px;border:1px solid #463b38;background:#ffffff'> $comments </td>
+								<td colspan='8' style='padding:15px;border:1px solid #463b38;background:#ffffff'> $comments </td>
 								</tr>
                             </table>
                         </td>

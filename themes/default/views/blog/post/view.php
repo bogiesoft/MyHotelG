@@ -32,7 +32,9 @@ $this->breadcrumbs = [
            <h2> <?= CHtml::encode($post->title); ?> </h2>
         </div>
         <div class="b-post__description">
+            <div class="wysiwyg">
             <?= $post->content; ?>
+            </div>
         </div>
     </div>
 </div>

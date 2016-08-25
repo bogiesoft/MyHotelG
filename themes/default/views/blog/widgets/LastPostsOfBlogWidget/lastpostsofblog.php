@@ -1,46 +1,23 @@
 <?php Yii::import('application.modules.blog.BlogModule'); ?>
-<div class="grid_6" style="padding: 25px">
+<div class="row">
     <?php foreach ($posts as $post): ?>
-    <div class="b-preview-tour__image" style="background-image: url('<?= $post->getImageUrl();?>')">
-        
-   <div class="b-preview-tour__wrapper">
-        <div class="b-preview-tour__title" style="height: 100%;text-align: center">
-            <?= CHtml::link(
-                CHtml::encode($post->title),
-                ['/blog/post/view', 'slug' => $post->slug]
-            ); ?>
+        <div class="grid_6" style="padding: 25px">
+            <div class="b-preview-tour__image" style="background-image: url('<?= $post->getImageUrl(); ?>')">
+
+                <div class="b-preview-tour__wrapper">
+                    <div class="b-preview-tour__title" style="height: 100%;text-align: center">
+                        <?= CHtml::link(
+                            CHtml::encode($post->title),
+                            ['/blog/post/view', 'slug' => $post->slug]
+                        ); ?>
+                    </div>
+
+                </div>
+            </div>
         </div>
 
-   </div>
-    </div>
     <?php endforeach; ?>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 <!--
@@ -57,14 +34,14 @@
             <div class="posts-list-block">
                 <div class="posts-list-block-header">
                     <?= CHtml::link(
-                        CHtml::encode($post->title),
-                        ['/blog/post/view', 'slug' => $post->slug]
-                    ); ?>
+    CHtml::encode($post->title),
+    ['/blog/post/view', 'slug' => $post->slug]
+); ?>
                 </div>
 
                 <div class="posts-list-block-meta">
                     <span>
-                      
+
 
                     </span>
 
@@ -90,9 +67,9 @@
                             <?php foreach ((array)$post->getTags() as $tag): ?>
                                 <span>
                                     <?= CHtml::link(
-                                        CHtml::encode($tag),
-                                        ['/posts/', 'tag' => CHtml::encode($tag)]
-                                    ); ?>
+    CHtml::encode($tag),
+    ['/posts/', 'tag' => CHtml::encode($tag)]
+); ?>
                                 </span>
                             <?php endforeach; ?>
                         </span>
@@ -101,9 +78,9 @@
                             <i class="glyphicon glyphicon-comment"></i>
 
                             <?= CHtml::link(
-                                $post->getCommentCount(),
-                                ['/blog/post/view', 'slug' => $post->slug]
-                            ); ?>
+    $post->getCommentCount(),
+    ['/blog/post/view', 'slug' => $post->slug]
+); ?>
                         </span>
                     </div>
                 </div>

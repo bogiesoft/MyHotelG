@@ -9,7 +9,9 @@
                     </div>
                     <div class="my-slider-news__description">
                         <div class="my-slider-news_text">
-                            <?= $model->short_text; ?>
+                            <div class="wysiwyg">
+                                <?= $model->short_text; ?>
+                            </div>
                         </div>
                         <div class="my-slider-next">
                             <a href="/news/<?= $model->slug; ?>.html"> Читать далее</a>

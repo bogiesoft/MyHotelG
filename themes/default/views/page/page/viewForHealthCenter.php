@@ -35,7 +35,9 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
         <div class="grid_9">
             <div>
                 <div class="b-health-center">
+                    <div class="wysiwyg">
                     <?= $model->body; ?>
+                    </div>
                 </div>
             </div>
         </div>

@@ -14,6 +14,8 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
 <div style="min-height: 760px">
     <h1 class="b-page__header" ><?= $model->title; ?></h1>
     <div class="b-additional-services">
+        <div class="wysiwyg">
         <?= $model->body; ?>
-    </div>
+        </div>
+        </div>
 </div>

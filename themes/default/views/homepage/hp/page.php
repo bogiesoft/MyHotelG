@@ -101,6 +101,10 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                                 <option value="Корпус 1 Стандарт">Стандарт</option>
                                 <option value="Корпус 1 Семейный">Семейный</option>
                             </optgroup>
+                            <optgroup label="Корпус 2">
+                                <option value="Корпус 2 Стандарт">Стандарт</option>
+                                <option value="Корпус 2 Семейный">Семейный</option>
+                            </optgroup>
                             <optgroup label="Корпус 3">
                                 <option value="Корпус 3 Стандарт">Стандарт</option>
                             </optgroup>

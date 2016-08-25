@@ -37,9 +37,12 @@ $this->breadcrumbs = [
             <br>
             <?php if ($model->image): ?>
                 <a class="fancybox" href="<?= $model->getImageUrl() ?>"><img src="<?= $model->getImageUrl() ?>" alt=""
-                                style="max-width: 500px;width: 100%;margin-right: 20px;margin-bottom:20px;float: left"></a>
+                                                                             style="max-width: 500px;width: 100%;margin-right: 20px;margin-bottom:20px;float: left"></a>
             <?php endif; ?>
-            <?= $model->full_text; ?></p>
+            <div class="wysiwyg">
+                <?= $model->full_text; ?>
+            </div>
+            </p>
         </div>
     </div>
 </div>

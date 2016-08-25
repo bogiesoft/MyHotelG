@@ -54,8 +54,6 @@ $this->breadcrumbs = array_merge(
                 </div>
             <?php } endforeach; ?>
         </div>
-
-
     </div>
     <div class="grid_4" style="padding: 10px">
         <div class="b-sidebar">
@@ -79,6 +77,15 @@ $this->breadcrumbs = array_merge(
                             <option>3</option>
                             <option>4</option>
                             <option>5</option>
+                        </select>
+                        <label for="medicalCenter" class="f-order__label medical--center" style="margin-top: 10px">
+                            Планируете ли вы *<br>
+                            пользоваться услугами медцентра ?
+                        </label>
+                        <select id="medicalCenter" name="medicalCenter">
+                            <option value=""></option>
+                            <option value="Услуги мед.центра - да">Да</option>
+                            <option value="Услуги мед.центра - нет">Нет</option>
                         </select>
                         <label class="f-order__label" for="rooms" style="margin-top: 5px"> Категория
                             проживания* </label>

@@ -130,6 +130,7 @@
     <script>
         $(function () {
             $("#rooms").selectmenu();
+            $("#medicalCenter").selectmenu();
             $("#people")
                 .selectmenu()
                 .selectmenu("menuWidget")

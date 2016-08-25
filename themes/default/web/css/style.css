@@ -2150,7 +2150,7 @@ nav {
     display: block;
     margin-bottom: 15px;
     line-height: 1.2;
-    color: black;
+    color: #312420;
     word-wrap: break-word;
 }
 
@@ -2361,4 +2361,13 @@ nav {
 p.wysiwyg__lead {
     margin-bottom: 30px;
     font-size: 1.2em
+}
+.medical--center{
+    transition: .3s;
+}
+
+.medical--center--alert {
+    border: 1px solid red;
+    padding: 3px;
+    color: green;
 }

@@ -17,27 +17,26 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
 <div class="banner1">
     <div class="row">
         <div class="grid_4">
-            <div class="box1 first wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
+            <div style="text-align: center" class="box1 first wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: none;">
-                <h2>"Усадьба Ника"
-                    Оздоровительный центр </h2>
+                <h2 class="titleh2">Центр Оздоровительной медицины "Ника" </h2>
                                         <span class="heading"><a
                                                 href="/ozdorovitelnyy-centr">Читать подробнее</a></span>
             </div>
         </div>
 
         <div class="grid_4">
-            <div class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+            <div style="text-align: center" class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2>Дополнительные услуги</h2>
+                <h2 class="titleh2">Дополнительные услуги</h2>
                                         <span class="heading"><a
                                                 href="/dopolnitelnye-uslugi">Читать подробнее</a></span>
             </div>
         </div>
         <div class="grid_4">
-            <div class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
+            <div style="text-align: center" class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
                  style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2>Досуг</h2>
+                <h2 class="titleh2">Досуг</h2>
                                         <span class="heading"><a
                                                 href="/blogs">Читать подробнее</a></span>
             </div>
@@ -53,25 +52,25 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
 </div>
 <hr>
 <div class="row">
-<div class="grid_8">
-<div style="padding: 15px" class="main-paga-text">
-    <p style="text-align: center;font-weight: bold;font-size: 20px">
-        <srong>Усадьба "Ника" </srong>
-        <br></p>
-        <p>Идеальное место, чтобы почувствовать энергию гор, полюбоваться величественной рекой
-        Катунь и
-        находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
-        комфорта.
-    </p>
-    <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
-        <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
-    <hr style="margin-bottom: 3px">
-</div>
-    <hr>
-    <div>
-        <?php $this->widget('application.modules.news.widgets.LastNewsWidget'); ?>
+    <div class="grid_8">
+        <div style="padding: 15px" class="main-paga-text">
+            <p style="text-align: center;font-weight: bold;font-size: 20px">
+                <srong>Усадьба "Ника"</srong>
+                <br></p>
+            <p>Идеальное место, чтобы почувствовать энергию гор, полюбоваться величественной рекой
+                Катунь и
+                находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
+                комфорта.
+            </p>
+            <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
+                <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
+            <hr style="margin-bottom: 3px">
+        </div>
+        <hr>
+        <div>
+            <?php $this->widget('application.modules.news.widgets.LastNewsWidget'); ?>
+        </div>
     </div>
-</div>
     <div class="grid_4" style="padding: 10px">
         <div class="b-sidebar" style="min-height: 680px">
             <div class="b-widget__weather">

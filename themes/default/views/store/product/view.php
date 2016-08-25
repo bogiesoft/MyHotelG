@@ -37,7 +37,9 @@ $this->breadcrumbs = array_merge(
                 </div>
             </div>
             <div class="clearfix"></div>
-            <?= $product->description; ?>
+            <div class="wysiwyg">
+                <?= $product->description; ?>
+            </div>
         </div>
         <hr>
         <div class="row">

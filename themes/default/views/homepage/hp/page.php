@@ -72,7 +72,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
         </div>
     </div>
     <div class="grid_4" style="padding: 10px">
-        <div class="b-sidebar" style="min-height: 680px">
+        <div class="b-sidebar" style="min-height: 690px">
             <div class="b-widget__weather">
             </div>
             <div class="b-widget-order">

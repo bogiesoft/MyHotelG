@@ -36,8 +36,9 @@ $this->breadcrumbs = [
             <h2 style="text-align: center;margin-top: 10px"><strong><?= CHtml::encode($model->title); ?></strong></h2>
             <br>
             <?php if ($model->image): ?>
-                <a class="fancybox" href="<?= $model->getImageUrl() ?>"><img src="<?= $model->getImageUrl() ?>" alt=""
-                                                                             style="max-width: 500px;width: 100%;margin-right: 20px;margin-bottom:20px;float: left"></a>
+                <div class="block-news-img" style="background-image: url('<?= $model->getImageUrl() ?>')">
+                    <a href="<?= $model->getImageUrl() ?>" class="fancybox block-news-img__link"></a>
+                </div>
             <?php endif; ?>
             <div class="wysiwyg">
                 <?= $model->full_text; ?>

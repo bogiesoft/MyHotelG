@@ -2151,6 +2151,7 @@ nav {
     margin-bottom: 15px;
     line-height: 1.2;
     color: #312420;
+    font-weight: bold;
     word-wrap: break-word;
 }
 
@@ -2362,7 +2363,8 @@ p.wysiwyg__lead {
     margin-bottom: 30px;
     font-size: 1.2em
 }
-.medical--center{
+
+.medical--center {
     transition: .3s;
 }
 

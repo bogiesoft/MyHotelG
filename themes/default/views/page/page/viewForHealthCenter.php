@@ -18,16 +18,16 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
         <div class="grid_3" style="border-right: 1px solid #312420">
             <ul class="list-health-center">
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Главная страница</a>
+                    <a class="health-center__link" href="/ozdorovitelnyy-centr">Главная страница</a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Оздоровительные программы</a>
+                    <a class="health-center__link" href="/ozdorovitelnye-programmy">Оздоровительные программы</a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Сила Пант</a>
+                    <a class="health-center__link" href="/sila-pant">Сила Пант</a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Контакты</a>
+                    <a class="health-center__link" href="/kontakty-centr-nika">Контакты</a>
                 </li>
             </ul>
 
@@ -36,7 +36,7 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
             <div>
                 <div class="b-health-center">
                     <div class="wysiwyg">
-                    <?= $model->body; ?>
+                        <?= $model->body; ?>
                     </div>
                 </div>
             </div>

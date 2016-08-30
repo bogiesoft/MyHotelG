@@ -15,7 +15,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
 ?>
 <div style="margin: 0;padding: 0">
     <div class="slider-border-top">
-        
+
     </div>
 </div>
 <?php $this->widget('application.modules.slide.widgets.SlideWidget', []); ?>
@@ -29,28 +29,28 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                 ЦЕНТР ОЗДОРОВИТЕЛЬНОЙ МЕДИЦИНЫ "НИКА"
 
                 <br>
-                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                <a class="banner1__item__link" href="/ozdorovitelnyy-centr">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="banner1__item">
                 ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
                 <br>
-                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                <a class="banner1__item__link" href="/dopolnitelnye-uslugi">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="banner1__item">
                 Корпоративный отдых
                 <br>
-                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                <a class="banner1__item__link" href="/korporativnyy-otdyh">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
         <div class="col-lg-3">
             <div class="banner1__item">
                 ДОСУГ
                 <br>
-                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
+                <a class="banner1__item__link" href="/blogs">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
         <div style="clear: both"></div>

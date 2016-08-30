@@ -13,25 +13,25 @@ $this->keywords = $model->keywords ?: Yii::app()->getModule('yupe')->siteKeyWord
 ?>
 <h1 class="b-page__header"
     style="text-align: center;display: block;color: #312420;line-height: 1.5;padding: 3px;font-size: 30px">
-    Центр Оздоровительной медицины "Ника"</h1>
+    КОРПОРАТИВНЫЙ ОТДЫХ </h1>
 <div style="min-height: 760px">
     <div class="row">
         <div class="grid_3" style="border-right: 1px solid #312420">
             <ul class="list-health-center">
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Размещение </a>
+                    <a class="health-center__link" href="/korporativnyy-otdyh">Размещение </a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Конференц-зал</a>
+                    <a class="health-center__link" href="/konferenc-zal">Конференц-зал</a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href=""> Меню "кофе-брейк" </a>
+                    <a class="health-center__link" href="/menyu-kofe-breyk"> Меню "кофе-брейк" </a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Комплексное меню</a>
+                    <a class="health-center__link" href="/kompleksnoe-menyu">Комплексное меню</a>
                 </li>
                 <li class="health-center__item">
-                    <a class="health-center__link" href="">Меню ресторана</a>
+                    <a class="health-center__link" href="/menyu-restorana">Меню ресторана</a>
                 </li>
             </ul>
 

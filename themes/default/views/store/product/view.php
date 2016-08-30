@@ -98,6 +98,7 @@ $this->breadcrumbs = array_merge(
                             </optgroup>
                             <optgroup label="Корпус 2">
                                 <option value="Корпус 2 Стандарт">Стандарт</option>
+                                <option value="Корпус 2 Стандарт Стандарт Улучшенный">Стандарт Улучшенный </option>
                                 <option value="Корпус 2 Семейный">Семейный</option>
                             </optgroup>
                             <optgroup label="Корпус 3">

@@ -13,60 +13,69 @@ $this->breadcrumbs = [
 $this->description = !empty($page->description) ? $page->description : Yii::app()->getModule('yupe')->siteDescription;
 $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getModule('yupe')->siteKeyWords
 ?>
+<div style="margin: 0;padding: 0">
+    <div class="slider-border-top">
+        
+    </div>
+</div>
 <?php $this->widget('application.modules.slide.widgets.SlideWidget', []); ?>
-<div class="banner1">
-    <div class="row">
-        <div class="grid_4">
-            <div style="text-align: center" class="box1 first wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s"
-                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.1s; animation-name: none;">
-                <h2 class="titleh2">Центр Оздоровительной медицины "Ника" </h2>
-                                        <span class="heading"><a
-                                                href="/ozdorovitelnyy-centr">Читать подробнее</a></span>
-            </div>
-        </div>
+<div class="slider-border-bottom">
 
-        <div class="grid_4">
-            <div style="text-align: center" class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2 class="titleh2">Дополнительные услуги</h2>
-                                        <span class="heading"><a
-                                                href="/dopolnitelnye-uslugi">Читать подробнее</a></span>
+</div>
+<div class="row" style="margin: 0px;padding: 15px">
+    <div class="banner-menu">
+        <div class="col-lg-3">
+            <div class="banner1__item">
+                ЦЕНТР ОЗДОРОВИТЕЛЬНОЙ МЕДИЦИНЫ "НИКА"
+
+                <br>
+                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
-        <div class="grid_4">
-            <div style="text-align: center" class="box1 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s"
-                 style="visibility: visible; animation-duration: 1s; animation-delay: 0.2s; animation-name: none;">
-                <h2 class="titleh2">Досуг</h2>
-                                        <span class="heading"><a
-                                                href="/blogs">Читать подробнее</a></span>
+        <div class="col-lg-3">
+            <div class="banner1__item">
+                ДОПОЛНИТЕЛЬНЫЕ УСЛУГИ
+                <br>
+                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
-        <div class="grid_12">
-            <div style="text-align: center;color: white;font-size: 16px;margin-top: 15px">
-                <a href="#"> Скачать договор с агентством <img style="margin-left: 5px"
-                                                               src="/themes/default/web/images/word-Icon.png"
-                                                               height="20px" width="20px" alt=""></a>
+        <div class="col-lg-3">
+            <div class="banner1__item">
+                Корпоративный отдых
+                <br>
+                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
             </div>
         </div>
+        <div class="col-lg-3">
+            <div class="banner1__item">
+                ДОСУГ
+                <br>
+                <a class="banner1__item__link" href="">ЧИТАТЬ ПОДРОБНЕЕ</a>
+            </div>
+        </div>
+        <div style="clear: both"></div>
     </div>
 </div>
 <hr>
 <div class="row">
     <div class="grid_8">
-        <div style="padding: 15px" class="main-paga-text">
-            <p style="text-align: center;font-weight: bold;font-size: 20px">
-                <srong>Усадьба "Ника"</srong>
-                <br></p>
-            <p>Идеальное место, чтобы почувствовать энергию гор, полюбоваться величественной рекой
-                Катунь и
-                находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
-                комфорта.
-            </p>
-            <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
-                <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
+        <div class="main-paga-text">
+            <div class="b-border__top"></div>
+            <div class="paga-text">
+                <p style="text-align: center;font-weight: bold;font-size: 20px">
+                    <srong>Усадьба "Ника"</srong>
+                    <br></p>
+                <p>Идеальное место, чтобы почувствовать энергию гор, полюбоваться величественной рекой
+                    Катунь и
+                    находиться в единении с уникальной природой <b> Горного Алтая,</b> не отказываясь от привычного
+                    комфорта.
+                </p>
+                <p> Мы предлагаем размещение в комфортабельных благоустроенных номерах разной категории.
+                    <b>Хороший отдых </b>поддержат дополнительные услуги и тёплый приём.</p>
+            </div>
+            <div class="b-border__bottom"></div>
             <hr style="margin-bottom: 3px">
         </div>
-        <hr>
         <div>
             <?php $this->widget('application.modules.news.widgets.LastNewsWidget'); ?>
         </div>
@@ -112,6 +121,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                             </optgroup>
                             <optgroup label="Корпус 2">
                                 <option value="Корпус 2 Стандарт">Стандарт</option>
+                                <option value="Корпус 2 Стандарт Стандарт Улучшенный">Стандарт Улучшенный </option>
                                 <option value="Корпус 2 Семейный">Семейный</option>
                             </optgroup>
                             <optgroup label="Корпус 3">

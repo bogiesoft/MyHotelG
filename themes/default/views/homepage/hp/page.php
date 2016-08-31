@@ -121,7 +121,7 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                             </optgroup>
                             <optgroup label="Корпус 2">
                                 <option value="Корпус 2 Стандарт">Стандарт</option>
-                                <option value="Корпус 2 Стандарт Стандарт Улучшенный">Стандарт Улучшенный </option>
+                                <option value="Корпус 2 Стандарт Стандарт Улучшенный">Стандарт Улучшенный</option>
                                 <option value="Корпус 2 Семейный">Семейный</option>
                             </optgroup>
                             <optgroup label="Корпус 3">
@@ -156,6 +156,12 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div style="margin:20px 0;padding: 0px">
+    <div class="b-map-yandex">
+        <script type="text/javascript" charset="utf-8" async
+                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=5xe-DGWdZZ-A97kFc4MiUqSPII4YEz2t&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
     </div>
 </div>
 <div class="row">

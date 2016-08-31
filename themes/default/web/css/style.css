@@ -2139,7 +2139,7 @@ nav {
     padding: 15px;
     font-size: 18px;
     line-height: 28px;
-    font-family: "PT Sans",Sans-Serif !important;
+    font-family: "PT Sans", Sans-Serif !important;
     text-align: justify;
 }
 
@@ -2467,4 +2467,10 @@ p.wysiwyg__lead {
     background-size: contain;
     background-repeat: repeat-x;
     background-position: center;
+}
+
+.b-map-yandex {
+    min-height: 400px;
+    margin: 10px;
+    background-color: yellow;
 }

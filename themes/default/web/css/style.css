@@ -2472,4 +2472,6 @@ p.wysiwyg__lead {
 .b-map-yandex {
     min-height: 400px;
     margin: 10px;
+    background-color: #473631;
+    border: 1px solid #463b38;
 }

@@ -45,7 +45,8 @@ $this->breadcrumbs = array_merge(
         <div class="row">
             <div class="grid_4" style="padding: 20px">
                 <div class="b-product-image" style="background-image: url('<?= StoreImage::product($product); ?>')">
-                    <a rel="group" class="fancybox b-product-image__link" href="<?= StoreImage::product($product); ?>"></a>
+                    <a rel="group" class="fancybox b-product-image__link"
+                       href="<?= StoreImage::product($product); ?>"></a>
                 </div>
             </div>
             <?php foreach ($product->getImages() as $key => $image): { ?>
@@ -97,12 +98,16 @@ $this->breadcrumbs = array_merge(
                                 <option value="Корпус 1 Семейный">Семейный</option>
                             </optgroup>
                             <optgroup label="Корпус 2">
-                                <option value="Корпус 2 Стандарт">Стандарт</option>
-                                <option value="Корпус 2 Стандарт Стандарт Улучшенный">Стандарт Улучшенный </option>
-                                <option value="Корпус 2 Семейный">Семейный</option>
+                                <option value="Корпус 2 Стандарт Эконом"> Стандарт Эконом</option>
+                                <option value="Корпус 2 Номер 2А Стандарт"> Номер 2А Стандарт</option>
+                                <option value="Корпус 2 Номер 3 Стандарт Улучшенный">Номер 3 Стандарт Улучшенный
+                                </option>
+                                <option value="Номер 2К Стандарт Улучшенный">Номер 2К Стандарт Улучшенный</option>
+                                <option value="Корпус 2 Семейный Семейный Плюс">Семейный Плюс</option>
                             </optgroup>
                             <optgroup label="Корпус 3">
                                 <option value="Корпус 3 Стандарт">Стандарт</option>
+                                <option value="Корпус 3 Стандарт Улучшенный">Стандарт Улучшенный</option>
                             </optgroup>
                             <optgroup label="Корпус 5">
                                 <option value="Корпус 5 Стандарт">Стандарт</option>

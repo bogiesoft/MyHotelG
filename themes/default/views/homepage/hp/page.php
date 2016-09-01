@@ -54,6 +54,10 @@ $this->keywords = !empty($page->keywords) ? $page->keywords : Yii::app()->getMod
             </div>
         </div>
         <div style="clear: both"></div>
+        <div style="text-align: center">
+            <a href="#" style="font-size: 18px;color: white">Скачать договор с агентством <img
+                    src="/themes/default/web/images/word-Icon.png" style="width: 20px;height: 20px" alt=""> </a>
+        </div>
     </div>
 </div>
 <hr>
